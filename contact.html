@@ -1,24 +1,24 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="en-AU" class="scroll-smooth">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | Site Name</title>
-  <meta name="description" content="" />
+  <title>Contact | Horizon Print Management</title>
+  <meta name="description" content="Get in touch with Horizon Print Management — request a quote, benchmark your print spend, or speak with our strategic print team." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://yourdomain.com/contact.html" />
-  <meta property="og:title"       content="Contact | Site Name" />
-  <meta property="og:description" content="" />
+  <meta property="og:title"       content="Contact | Horizon Print Management" />
+  <meta property="og:description" content="Get in touch with Horizon Print Management — request a quote, benchmark your print spend, or speak with our strategic print team." />
   <meta property="og:type"        content="website" />
   <meta property="og:url"         content="https://yourdomain.com/contact.html" />
   <meta property="og:image"       content="https://yourdomain.com/assets/images/og-image.jpg" />
-  <link rel="icon"             href="assets/images/favicon/favicon.ico" />
-  <link rel="icon"             href="assets/images/favicon/favicon.svg" type="image/svg+xml" />
-  <link rel="apple-touch-icon" href="assets/images/favicon/apple-touch-icon.png" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" />
+
   <link rel="stylesheet" href="assets/css/output.css" />
   <link rel="stylesheet" href="assets/css/custom.css" />
 </head>
@@ -27,15 +27,158 @@
 
   <header></header>
 
-  <main class="flex-1">
-    Contact
+  <main id="top" class="flex-1">
+
+    <!-- =========================================================
+       PAGE HEADER — compact, clean, minimal
+       ========================================================= -->
+    <section class="section-ink relative overflow-hidden -mt-[80px] md:-mt-[92px] pt-[120px] md:pt-[140px] pb-12 md:pb-16"
+      aria-labelledby="page-h"
+      style="background:
+        radial-gradient(ellipse 70% 50% at 50% 0%, rgba(0,119,188,0.18) 0%, rgba(20,25,31,0) 60%),
+        #14191F;">
+      <div class="wrap">
+        <div class="max-w-2xl">
+          <span class="eyebrow" style="color: var(--color-brand-sky);">Contact</span>
+          <h1 id="page-h" class="text-cream">Talk to our team.</h1>
+          <p class="lead mt-4" style="color: rgba(255,250,235,.82);">
+            Quote, benchmark, or strategic review — we reply within one business day.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+       CONTACT — form + details
+       ========================================================= -->
+    <section id="contact-form" class="section bg-cream-2/40">
+      <div class="wrap grid lg:grid-cols-[1.2fr_1fr] gap-12 lg:gap-16">
+
+        <!-- FORM -->
+        <form class="bg-white p-8 md:p-10 shadow-card rounded-2xl" novalidate
+              onsubmit="event.preventDefault(); this.querySelector('[data-success]').classList.remove('hidden'); this.reset();">
+          <h2 class="text-[clamp(28px,3vw,40px)] mb-2">Send us a message</h2>
+          <p class="text-body-soft mb-8">Fields marked <span class="text-accent-clay">*</span> are required.</p>
+
+          <div class="grid sm:grid-cols-2 gap-5">
+            <label class="block">
+              <span class="block font-display text-[12px] uppercase tracking-[0.14em] text-body-soft mb-2">First name <span class="text-accent-clay">*</span></span>
+              <input type="text" name="first" required
+                class="w-full h-12 px-4 border border-line bg-white rounded-lg focus:outline-none focus:border-site focus:ring-2 focus:ring-site/20 transition" />
+            </label>
+            <label class="block">
+              <span class="block font-display text-[12px] uppercase tracking-[0.14em] text-body-soft mb-2">Last name <span class="text-accent-clay">*</span></span>
+              <input type="text" name="last" required
+                class="w-full h-12 px-4 border border-line bg-white rounded-lg focus:outline-none focus:border-site focus:ring-2 focus:ring-site/20 transition" />
+            </label>
+            <label class="block">
+              <span class="block font-display text-[12px] uppercase tracking-[0.14em] text-body-soft mb-2">Work email <span class="text-accent-clay">*</span></span>
+              <input type="email" name="email" required
+                class="w-full h-12 px-4 border border-line bg-white rounded-lg focus:outline-none focus:border-site focus:ring-2 focus:ring-site/20 transition" />
+            </label>
+            <label class="block">
+              <span class="block font-display text-[12px] uppercase tracking-[0.14em] text-body-soft mb-2">Phone</span>
+              <input type="tel" name="phone"
+                class="w-full h-12 px-4 border border-line bg-white rounded-lg focus:outline-none focus:border-site focus:ring-2 focus:ring-site/20 transition" />
+            </label>
+            <label class="block sm:col-span-2">
+              <span class="block font-display text-[12px] uppercase tracking-[0.14em] text-body-soft mb-2">Company</span>
+              <input type="text" name="company"
+                class="w-full h-12 px-4 border border-line bg-white rounded-lg focus:outline-none focus:border-site focus:ring-2 focus:ring-site/20 transition" />
+            </label>
+            <label class="block sm:col-span-2">
+              <span class="block font-display text-[12px] uppercase tracking-[0.14em] text-body-soft mb-2">How can we help? <span class="text-accent-clay">*</span></span>
+              <select name="topic" required
+                class="w-full h-12 px-4 border border-line bg-white rounded-lg focus:outline-none focus:border-site focus:ring-2 focus:ring-site/20 transition">
+                <option value="">Select a topic…</option>
+                <option>Request a quote</option>
+                <option>Benchmark my print spend</option>
+                <option>Strategic print review</option>
+                <option>Sustainability / carbon-neutral print</option>
+                <option>General enquiry</option>
+              </select>
+            </label>
+            <label class="block sm:col-span-2">
+              <span class="block font-display text-[12px] uppercase tracking-[0.14em] text-body-soft mb-2">Message <span class="text-accent-clay">*</span></span>
+              <textarea name="message" rows="5" required
+                class="w-full px-4 py-3 border border-line bg-white rounded-lg focus:outline-none focus:border-site focus:ring-2 focus:ring-site/20 transition resize-y"></textarea>
+            </label>
+            <label class="flex items-start gap-3 sm:col-span-2 text-[14px] text-body-soft">
+              <input type="checkbox" name="consent" required class="mt-1 w-4 h-4 accent-site" />
+              <span>I agree to be contacted about my enquiry under the <a href="#" class="underline underline-offset-2 hover:text-site">Privacy Policy</a>.</span>
+            </label>
+          </div>
+
+          <div class="flex items-center gap-4 mt-8">
+            <button type="submit" class="btn btn-primary">
+              Send message
+              <svg class="arrow" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                <path d="M2 7h10M8 3l4 4-4 4" />
+              </svg>
+            </button>
+            <p data-success class="hidden text-accent-leaf font-display text-[13px] uppercase tracking-[0.14em]">
+              ✓ Thanks — we'll be in touch shortly.
+            </p>
+          </div>
+        </form>
+
+        <!-- DETAILS -->
+        <aside class="flex flex-col gap-8">
+          <div>
+            <span class="eyebrow">Direct lines</span>
+            <ul class="space-y-5 mt-4">
+              <li class="flex items-start gap-4">
+                <span class="shrink-0 w-10 h-10 rounded-full bg-ink text-cream inline-flex items-center justify-center">
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 4h3l2 5-2.5 1.5a11 11 0 005 5L14 13l5 2v3a2 2 0 01-2 2A15 15 0 013 6a2 2 0 012-2z"/></svg>
+                </span>
+                <div>
+                  <div class="font-display text-[11px] uppercase tracking-[0.16em] text-body-soft">Phone</div>
+                  <a href="tel:1300377377" class="font-display text-xl text-ink hover:text-site transition-colors">1300 377 377</a>
+                </div>
+              </li>
+              <li class="flex items-start gap-4">
+                <span class="shrink-0 w-10 h-10 rounded-full bg-ink text-cream inline-flex items-center justify-center">
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+                </span>
+                <div>
+                  <div class="font-display text-[11px] uppercase tracking-[0.16em] text-body-soft">Email</div>
+                  <a href="mailto:hello@horizonprintmanagement.com.au" class="font-display text-xl text-ink hover:text-site transition-colors break-all">hello@horizonprintmanagement.com.au</a>
+                </div>
+              </li>
+              <li class="flex items-start gap-4">
+                <span class="shrink-0 w-10 h-10 rounded-full bg-ink text-cream inline-flex items-center justify-center">
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22s7-7.5 7-13a7 7 0 10-14 0c0 5.5 7 13 7 13z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                </span>
+                <div>
+                  <div class="font-display text-[11px] uppercase tracking-[0.16em] text-body-soft">Head office</div>
+                  <p class="font-display text-xl text-ink m-0 leading-snug">Warwick Farm<br/>NSW 2170, Australia</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="border-t border-line pt-6">
+            <div class="font-display text-[11px] uppercase tracking-[0.16em] text-body-soft mb-2">Hours</div>
+            <p class="m-0 text-body">Monday – Friday<br/>8:30am – 5:30pm AEST</p>
+          </div>
+
+          <div class="rounded-2xl overflow-hidden border border-line aspect-[4/3] bg-cream-2">
+            <iframe
+              src="https://www.openstreetmap.org/export/embed.html?bbox=150.928%2C-33.926%2C150.956%2C-33.904&amp;layer=mapnik&amp;marker=-33.9148%2C150.9416"
+              class="w-full h-full block" loading="lazy"
+              title="Horizon Print Management — Warwick Farm NSW"></iframe>
+          </div>
+        </aside>
+      </div>
+    </section>
+
   </main>
 
   <footer></footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="layout/navbar.js"></script>
   <script src="layout/footer.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
+
 </html>

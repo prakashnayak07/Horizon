@@ -1,5 +1,5 @@
 node_modules/
-assets/css/output.css
+# assets/css/output.css
 .DS_Store
 Thumbs.db
 *.log
