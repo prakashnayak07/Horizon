@@ -100,10 +100,10 @@
     <div class="flex flex-wrap items-center justify-between gap-x-8 gap-y-3 py-5 text-[13px] text-cream/65">
       <p class="m-0">© <span id="yr">2026</span> — Horizon Print Management</p>
       <nav class="flex flex-wrap items-center gap-x-6 gap-y-2" aria-label="Legal">
-        <a href="#" class="hover:text-cream transition-colors">Terms of Use</a>
-        <a href="#" class="hover:text-cream transition-colors">Privacy Policy</a>
-        <a href="#" class="hover:text-cream transition-colors">Cookie Policy</a>
-        <a href="#" class="hover:text-cream transition-colors">Sitemap</a>
+        <a href="terms.html" class="hover:text-cream transition-colors">Terms of Trade</a>
+        <a href="privacy.html" class="hover:text-cream transition-colors">Privacy Policy</a>
+        <a href="cookies.html" class="hover:text-cream transition-colors">Cookie Policy</a>
+        <a href="sitemap.html" class="hover:text-cream transition-colors">Sitemap</a>
       </nav>
     </div>
 

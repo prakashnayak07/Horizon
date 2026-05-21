@@ -182,11 +182,6 @@
       }, { passive: true });
     }
 
-    // Fade-up on intersection
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-    }, { threshold: 0.12 });
-    document.querySelectorAll('section').forEach(el => { el.classList.add('fade-up'); io.observe(el); });
 
     // Smart popover placement for .sv-tile (chooses top/bottom/left/right + horizontal align based on viewport space)
     (function () {
