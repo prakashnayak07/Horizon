@@ -523,6 +523,9 @@
   .table {
     display: table;
   }
+  .aspect-16\/10 {
+    aspect-ratio: 16/10;
+  }
   .aspect-\[4\/3\] {
     aspect-ratio: 4/3;
   }
@@ -1704,6 +1707,16 @@
   .group-open\:rotate-45 {
     &:is(:where(.group):is([open], :popover-open, :open) *) {
       rotate: 45deg;
+    }
+  }
+  .group-hover\:scale-105 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        --tw-scale-x: 105%;
+        --tw-scale-y: 105%;
+        --tw-scale-z: 105%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
     }
   }
   .group-hover\:grayscale-0 {
