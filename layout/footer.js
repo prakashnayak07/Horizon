@@ -29,7 +29,8 @@
         <ul class="list-none p-0 m-0 grid gap-3 text-cream/80 text-[15px]">
           <li><a href="index.html" class="hover:text-cream transition-colors">Home</a></li>
           <li><a href="about.html" class="hover:text-cream transition-colors">About us</a></li>
-          <li><a href="index.html#faq" class="hover:text-cream transition-colors">FAQ</a></li>
+          <li><a href="network.html" class="hover:text-cream transition-colors">Our Network</a></li>
+          <li><a href="faq.html" class="hover:text-cream transition-colors">FAQ</a></li>
           <li><a href="contact.html" class="hover:text-cream transition-colors">Contact Us</a></li>
         </ul>
       </div>
@@ -110,15 +111,15 @@
     <!-- Sibling network row -->
     <div class="mt-4 pt-5 border-t border-brand-sky/20">
       <ul class="flex flex-wrap justify-center items-center gap-x-8 gap-y-2 list-none p-0 m-0 text-cream/75 text-[13px] font-display tracking-[0.04em]">
-        <li><a href="#" class="hover:text-cream transition-colors">Cups Galore</a></li>
+        <li><a href="https://cupsgalore.com.au/" target="_blank" rel="noopener" class="hover:text-cream transition-colors">Cups Galore</a></li>
         <li aria-hidden="true" class="text-brand-sky/40">·</li>
-        <li><a href="#" class="hover:text-cream transition-colors">Digital Press</a></li>
+        <li><a href="https://www.digitalpress.com.au/" target="_blank" rel="noopener" class="hover:text-cream transition-colors">Digital Press</a></li>
         <li aria-hidden="true" class="text-brand-sky/40">·</li>
-        <li><a href="#" class="hover:text-cream transition-colors" aria-current="page">Horizon Print Management</a></li>
+        <li><a href="network.html" class="hover:text-cream transition-colors" aria-current="page">Horizon Print Management</a></li>
         <li aria-hidden="true" class="text-brand-sky/40">·</li>
-        <li><a href="#" class="hover:text-cream transition-colors">Westman Printing</a></li>
+        <li><a href="https://westmanprinting.com.au/" target="_blank" rel="noopener" class="hover:text-cream transition-colors">Westman Printing</a></li>
         <li aria-hidden="true" class="text-brand-sky/40">·</li>
-        <li><a href="#" class="hover:text-cream transition-colors">Reacon Group</a></li>
+        <li><a href="https://www.reacongroup.com/" target="_blank" rel="noopener" class="hover:text-cream transition-colors">Reacon Group</a></li>
       </ul>
     </div>
   </div>

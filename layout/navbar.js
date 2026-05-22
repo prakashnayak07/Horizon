@@ -30,7 +30,7 @@ document.querySelector('header').innerHTML = `
         <nav class="hidden lg:flex gap-7 font-display text-[14px] uppercase tracking-[0.05em]" aria-label="Primary">
           <a href="about.html" class="nav-link">About</a>
           <a href="services.html" class="nav-link">Services</a>
-          <a href="index.html#network" class="nav-link">Network</a>
+          <a href="network.html" class="nav-link">Network</a>
           <a href="sustainability.html" class="nav-link">Sustainability</a>
           <a href="contact.html" class="nav-link">Contact</a>
         </nav>
@@ -57,7 +57,7 @@ document.querySelector('header').innerHTML = `
   <nav id="mobile-menu" class="fixed inset-x-0 top-[72px] md:top-[88px] bottom-0 bg-ink text-cream px-5 md:px-8 py-12 z-[99] overflow-y-auto flex flex-col gap-4 invisible -translate-y-full transition-transform duration-300 ease-[cubic-bezier(.2,.8,.2,1)] [&.open]:visible [&.open]:translate-y-0" aria-label="Mobile">
     <a href="about.html" class="font-display text-2xl py-3.5 border-b border-line-ink">About</a>
     <a href="services.html" class="font-display text-2xl py-3.5 border-b border-line-ink">Services</a>
-    <a href="index.html#network" class="font-display text-2xl py-3.5 border-b border-line-ink">Network</a>
+    <a href="network.html" class="font-display text-2xl py-3.5 border-b border-line-ink">Network</a>
     <a href="sustainability.html" class="font-display text-2xl py-3.5 border-b border-line-ink">Sustainability</a>
     <a href="contact.html" class="font-display text-2xl py-3.5 border-b border-line-ink">Contact</a>
     <a href="#login" class="text-lg text-cream/70">Client login</a>

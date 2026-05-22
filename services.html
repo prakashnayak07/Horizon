@@ -7,6 +7,7 @@
 
   <!-- ─── SEO ──────────────────────────────────────────────── -->
   <title>Print Management Services | Horizon Print Management</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
   <meta name="description" content="End-to-end strategic print management — procurement, brand standards, production, fulfilment and promotional merchandise. 10–20% average saving, nationwide press access, single accountable partner." />
   <meta name="keywords" content="print management, print procurement, brand standards, web offset, digital printing, promotional merchandise, fulfilment, Australia, HPM" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
@@ -36,7 +37,7 @@
   <link rel="dns-prefetch" href="https://images.pexels.com" />
 
   <link rel="preload" as="image"
-    href="https://images.unsplash.com/photo-1586075010923-2dd4570fb338?auto=format&fit=crop&w=2000&q=80"
+    href="https://images.pexels.com/photos/23534042/pexels-photo-23534042.jpeg?auto=compress&cs=tinysrgb&w=2000"
     fetchpriority="high" />
 
   <link rel="stylesheet"
@@ -107,184 +108,319 @@
   <main id="top" class="flex-1">
 
     <!-- =========================================================
-       PAGE HEADER
+       HERO
        ========================================================= -->
-    <section class="svc-hero" aria-labelledby="page-h">
-      <div class="svc-hero__media" aria-hidden="true">
-        <img src="https://images.unsplash.com/photo-1586075010923-2dd4570fb338?auto=format&fit=crop&w=2000&q=80"
-          alt="" width="2000" height="1125" fetchpriority="high" decoding="async" />
+    <section
+      class="relative isolate overflow-hidden -mt-[80px] md:-mt-[92px] pt-[120px] md:pt-[140px] pb-14 md:pb-20 text-cream"
+      aria-labelledby="page-h">
+      <div class="absolute inset-0 -z-10">
+        <img src="https://images.pexels.com/photos/23534042/pexels-photo-23534042.jpeg?auto=compress&cs=tinysrgb&w=2000"
+          alt="" width="2000" height="1125" fetchpriority="high" decoding="async"
+          class="w-full h-full object-cover opacity-60" />
+        <div class="absolute inset-0" style="background:
+            radial-gradient(ellipse 70% 50% at 30% 0%, rgba(0,119,188,0.30) 0%, rgba(20,25,31,0) 60%),
+            linear-gradient(180deg, rgba(20,25,31,0.85) 0%, rgba(20,25,31,0.95) 100%);"></div>
       </div>
 
-      <div class="wrap svc-hero__inner">
-        <div class="svc-hero__copy">
-          <nav aria-label="Breadcrumb" class="svc-crumb">
-            <ol>
-              <li><a href="index.html">Home</a></li>
-              <li aria-hidden="true">/</li>
-              <li>Services</li>
-            </ol>
-          </nav>
+      <div class="wrap">
+        <nav aria-label="Breadcrumb" class="mb-6 text-[12px]" style="color: rgba(255,250,235,.6);">
+          <ol class="flex items-center gap-2">
+            <li><a href="index.html" class="hover:text-cream transition-colors">Home</a></li>
+            <li aria-hidden="true">/</li>
+            <li class="text-cream/80">Services</li>
+          </ol>
+        </nav>
 
-          <span class="eyebrow eyebrow-indigo">Print management services</span>
-          <h1 id="page-h">The whole print supply chain, handled by one team.</h1>
-          <p class="lead">
-            Procurement, production, brand control, fulfilment, merchandise and reporting brought into one accountable workflow.
-          </p>
-
-          <div class="svc-hero__actions">
-            <a href="contact.html" class="btn btn-primary">
-              Request a quote
-              <svg class="arrow" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
-            </a>
-            <a href="#services-grid" class="btn btn-ghost-cream">Explore services</a>
+        <div class="grid grid-cols-1 lg:grid-cols-[1.2fr_.8fr] gap-10 lg:gap-14 items-end">
+          <div class="max-w-2xl">
+            <p class="eyebrow eyebrow-indigo text-cream/85">Print management services</p>
+            <h1 id="page-h" class="text-white text-[clamp(36px,4.4vw,60px)] leading-[1.05] mb-6">
+              All your print, sorted by one team.
+            </h1>
+            <p class="lead text-cream/90 mb-10" style="font-size:20px;max-width:56ch;">
+              We handle the quoting, printing, branding, delivery, merch and reporting — so you only deal with us.
+            </p>
+            <div class="flex flex-wrap items-center gap-6">
+              <a href="contact.html" class="btn btn-white">
+                Request a quote
+                <svg class="arrow" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6"
+                  aria-hidden="true">
+                  <path d="M2 7h10M8 3l4 4-4 4" />
+                </svg>
+              </a>
+              <a href="#services-grid" class="btn btn-ghost-cream">Explore services</a>
+            </div>
           </div>
+
+          <aside class="rounded-2xl p-5 md:p-6 backdrop-blur-sm"
+            style="background: rgba(255,250,235,0.06); border: 1px solid rgba(255,250,235,0.14);"
+            aria-label="Service highlights">
+            <div class="grid grid-cols-3 gap-4">
+              <div>
+                <div class="text-[10px] uppercase tracking-[0.14em] text-cream/55">Typical saving</div>
+                <div class="font-display text-2xl md:text-3xl text-cream mt-1">10–20%</div>
+              </div>
+              <div>
+                <div class="text-[10px] uppercase tracking-[0.14em] text-cream/55">On-time delivery</div>
+                <div class="font-display text-2xl md:text-3xl text-cream mt-1">96%</div>
+              </div>
+              <div>
+                <div class="text-[10px] uppercase tracking-[0.14em] text-cream/55">Access</div>
+                <div class="font-display text-2xl md:text-3xl text-cream mt-1">AU-wide</div>
+              </div>
+            </div>
+            <p class="text-[13px] mt-4 pt-4 border-t border-cream/15 m-0" style="color: rgba(255,250,235,.7);">
+              Supplier-neutral. Transparent sourcing, proofing and quarterly reporting on every program.
+            </p>
+          </aside>
         </div>
-
-        <aside class="svc-hero__panel" aria-label="Service highlights">
-          <div>
-            <span class="svc-panel__label">Typical saving</span>
-            <strong>10–20%</strong>
-          </div>
-          <div>
-            <span class="svc-panel__label">Delivery performance</span>
-            <strong>96%</strong>
-          </div>
-          <div>
-            <span class="svc-panel__label">Access model</span>
-            <strong>Nationwide</strong>
-          </div>
-          <p>Supplier-neutral print management with transparent sourcing, proofing and quarterly reporting.</p>
-        </aside>
       </div>
     </section>
 
     <!-- =========================================================
-       SERVICES DIRECTORY
+       VALUE PROPS — why HPM
        ========================================================= -->
-    <section id="services-grid" class="svc-directory" aria-labelledby="grid-h">
+    <section class="section bg-white" aria-labelledby="why-h">
       <div class="wrap">
-        <div class="svc-directory__head">
-          <div>
-            <span class="eyebrow eyebrow-indigo">Our services</span>
-            <h2 id="grid-h">Built for repeatable, controlled print programs.</h2>
-          </div>
-          <p>Use HPM as the single layer between your team and the best-fit producers, warehouses, mail houses and merchandise partners.</p>
+        <div class="max-w-3xl mb-12">
+          <p class="eyebrow">Why HPM</p>
+          <h2 id="why-h" class="text-[clamp(34px,4vw,52px)] m-0 leading-[1.05]">
+            Four reasons businesses bring their print to us.
+          </h2>
         </div>
 
-        <div class="svc-directory__layout">
-          <article class="svc-feature">
-            <img src="https://images.pexels.com/photos/6620992/pexels-photo-6620992.jpeg?auto=compress&cs=tinysrgb&w=1100"
-              alt="Print operator monitoring a production press" width="1100" height="760" loading="lazy" decoding="async" />
-            <div class="svc-feature__body">
-              <span>End-to-end management</span>
-              <h3>One brief. One accountable workflow. The right producer for every job.</h3>
-              <p>We benchmark suppliers, enforce specifications, manage approvals, coordinate production and keep delivery visible from start to finish.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
+          <div class="bg-cream-2/40 rounded-2xl p-6 border border-line">
+            <div class="w-11 h-11 rounded-xl bg-site/10 text-site flex items-center justify-center mb-4">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                aria-hidden="true">
+                <path d="M12 2v20M5 9l7-7 7 7M5 15l7 7 7-7" />
+              </svg>
             </div>
+            <h3 class="text-[17px] m-0 mb-2">No favourites, just the right printer</h3>
+            <p class="text-[14px] text-body-soft m-0">We don't own any presses. Every job goes to the printer best
+              suited for the spec, speed and price.</p>
+          </div>
+
+          <div class="bg-cream-2/40 rounded-2xl p-6 border border-line">
+            <div class="w-11 h-11 rounded-xl bg-site/10 text-site flex items-center justify-center mb-4">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                aria-hidden="true">
+                <path d="M12 2l2.5 5 5.5.8-4 3.9.9 5.5L12 14.8 7.1 17.2l.9-5.5-4-3.9 5.5-.8z" />
+              </svg>
+            </div>
+            <h3 class="text-[17px] m-0 mb-2">Your brand looks the same everywhere</h3>
+            <p class="text-[14px] text-body-soft m-0">Locked templates, colour control and sign-offs — your brand looks
+              the same from Perth to Cairns.</p>
+          </div>
+
+          <div class="bg-cream-2/40 rounded-2xl p-6 border border-line">
+            <div class="w-11 h-11 rounded-xl bg-site/10 text-site flex items-center justify-center mb-4">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                aria-hidden="true">
+                <path d="M3 12h4l3-8 4 16 3-8h4" />
+              </svg>
+            </div>
+            <h3 class="text-[17px] m-0 mb-2">Save 10–20% on print costs</h3>
+            <p class="text-[14px] text-body-soft m-0">Smarter specs, better supplier prices and one tidy invoice
+              usually save businesses 10–20% a year.</p>
+          </div>
+
+          <div class="bg-cream-2/40 rounded-2xl p-6 border border-line">
+            <div class="w-11 h-11 rounded-xl bg-site/10 text-site flex items-center justify-center mb-4">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                aria-hidden="true">
+                <path d="M12 2a10 10 0 100 20 10 10 0 000-20z M12 6v6l4 2" />
+              </svg>
+            </div>
+            <h3 class="text-[17px] m-0 mb-2">One team to call</h3>
+            <p class="text-[14px] text-body-soft m-0">One brief, one contact, one invoice. We take care of artwork,
+              colour, sign-off, delivery and reporting.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+       SERVICES GRID
+       ========================================================= -->
+    <section id="services-grid" class="section bg-cream-2" aria-labelledby="grid-h">
+      <div class="wrap">
+        <div class="grid grid-cols-1 lg:grid-cols-[1fr_1.1fr] gap-8 lg:gap-16 items-end mb-12">
+          <div>
+            <p class="eyebrow eyebrow-indigo">Our services</p>
+            <h2 id="grid-h" class="text-[clamp(34px,4vw,52px)] m-0 leading-[1.05]">
+              Everything you need printed, in one place.
+            </h2>
+          </div>
+          <p class="text-body-soft m-0 max-w-xl lg:justify-self-end">
+            We sit between you and the printers, warehouses, mail houses and merch suppliers — so you don't have to
+            chase any of them.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
+
+          <article class="group bg-white rounded-2xl border border-line p-6 hover:border-site transition-colors flex flex-col">
+            <div class="flex items-start justify-between gap-3 mb-4">
+              <span class="font-display text-[11px] uppercase tracking-[0.16em] text-site">01</span>
+              <span class="text-[10px] uppercase tracking-[0.14em] text-body-soft">Digital</span>
+            </div>
+            <h3 class="text-[17px] m-0 mb-2">Digital &amp; personalised print</h3>
+            <p class="text-[13px] text-body-soft m-0 mb-4">Fast, high-quality short runs and personalised pieces for
+              every recipient.</p>
+            <ul class="text-[12px] text-body-soft flex flex-wrap gap-1.5 mt-auto">
+              <li class="px-2 py-1 bg-cream-2 rounded-md">Colour control</li>
+              <li class="px-2 py-1 bg-cream-2 rounded-md">Personalisation</li>
+              <li class="px-2 py-1 bg-cream-2 rounded-md">Short-run</li>
+            </ul>
           </article>
 
-          <div class="svc-list">
-            <article class="svc-row">
-              <span class="svc-row__num">01</span>
-              <div>
-                <h3>Digital &amp; Variable Data Printing</h3>
-                <p>Offset-quality short runs, fast turnarounds and personalised campaign output.</p>
-              </div>
-              <ul>
-                <li>Colour control</li>
-                <li>Personalisation</li>
-                <li>Short-run agility</li>
-              </ul>
-            </article>
+          <article class="group bg-white rounded-2xl border border-line p-6 hover:border-site transition-colors flex flex-col">
+            <div class="flex items-start justify-between gap-3 mb-4">
+              <span class="font-display text-[11px] uppercase tracking-[0.16em] text-site">02</span>
+              <span class="text-[10px] uppercase tracking-[0.14em] text-body-soft">Offset</span>
+            </div>
+            <h3 class="text-[17px] m-0 mb-2">Large-run offset print</h3>
+            <p class="text-[13px] text-body-soft m-0 mb-4">Catalogues, magazines, annual reports and premium brochures
+              printed on the right press for the job.</p>
+            <ul class="text-[12px] text-body-soft flex flex-wrap gap-1.5 mt-auto">
+              <li class="px-2 py-1 bg-cream-2 rounded-md">Large volumes</li>
+              <li class="px-2 py-1 bg-cream-2 rounded-md">Premium finishes</li>
+              <li class="px-2 py-1 bg-cream-2 rounded-md">Benchmarking</li>
+            </ul>
+          </article>
 
-            <article class="svc-row">
-              <span class="svc-row__num">02</span>
-              <div>
-                <h3>Web &amp; Sheet-fed Offset</h3>
-                <p>Long-run catalogues, magazines, reports and premium collateral matched to the right press.</p>
-              </div>
-              <ul>
-                <li>Large volumes</li>
-                <li>Premium finishes</li>
-                <li>Supplier benchmarking</li>
-              </ul>
-            </article>
+          <article class="group bg-white rounded-2xl border border-line p-6 hover:border-site transition-colors flex flex-col">
+            <div class="flex items-start justify-between gap-3 mb-4">
+              <span class="font-display text-[11px] uppercase tracking-[0.16em] text-site">03</span>
+              <span class="text-[10px] uppercase tracking-[0.14em] text-body-soft">Wide format</span>
+            </div>
+            <h3 class="text-[17px] m-0 mb-2">Signage &amp; large format</h3>
+            <p class="text-[13px] text-body-soft m-0 mb-4">Shop, event, outdoor and vehicle signs — looking the same
+              across every store.</p>
+            <ul class="text-[12px] text-body-soft flex flex-wrap gap-1.5 mt-auto">
+              <li class="px-2 py-1 bg-cream-2 rounded-md">POS displays</li>
+              <li class="px-2 py-1 bg-cream-2 rounded-md">Event graphics</li>
+              <li class="px-2 py-1 bg-cream-2 rounded-md">National rollout</li>
+            </ul>
+          </article>
 
-            <article class="svc-row">
-              <span class="svc-row__num">03</span>
-              <div>
-                <h3>Wide Format &amp; Signage</h3>
-                <p>Retail, event, outdoor and vehicle graphics produced consistently across locations.</p>
-              </div>
-              <ul>
-                <li>POS displays</li>
-                <li>Event graphics</li>
-                <li>National rollout</li>
-              </ul>
-            </article>
+          <article class="group bg-white rounded-2xl border border-line p-6 hover:border-site transition-colors flex flex-col">
+            <div class="flex items-start justify-between gap-3 mb-4">
+              <span class="font-display text-[11px] uppercase tracking-[0.16em] text-site">04</span>
+              <span class="text-[10px] uppercase tracking-[0.14em] text-body-soft">Direct mail</span>
+            </div>
+            <h3 class="text-[17px] m-0 mb-2">Letters &amp; direct mail</h3>
+            <p class="text-[13px] text-body-soft m-0 mb-4">Addressed, unaddressed and personalised mail — including
+              data handling and Australia Post lodgement.</p>
+            <ul class="text-[12px] text-body-soft flex flex-wrap gap-1.5 mt-auto">
+              <li class="px-2 py-1 bg-cream-2 rounded-md">Data cleansing</li>
+              <li class="px-2 py-1 bg-cream-2 rounded-md">Segmentation</li>
+              <li class="px-2 py-1 bg-cream-2 rounded-md">AusPost UMS</li>
+            </ul>
+          </article>
 
-            <article class="svc-row">
-              <span class="svc-row__num">04</span>
-              <div>
-                <h3>Direct Mail &amp; Lettershop</h3>
-                <p>Addressed, unaddressed and personalised mail campaigns with data handling and lodgement.</p>
-              </div>
-              <ul>
-                <li>Data cleansing</li>
-                <li>Segmentation</li>
-                <li>AusPost UMS</li>
-              </ul>
-            </article>
+          <article class="group bg-white rounded-2xl border border-line p-6 hover:border-site transition-colors flex flex-col">
+            <div class="flex items-start justify-between gap-3 mb-4">
+              <span class="font-display text-[11px] uppercase tracking-[0.16em] text-site">05</span>
+              <span class="text-[10px] uppercase tracking-[0.14em] text-body-soft">Fulfilment</span>
+            </div>
+            <h3 class="text-[17px] m-0 mb-2">Storage &amp; delivery</h3>
+            <p class="text-[13px] text-body-soft m-0 mb-4">We hold your stock, pack the orders and ship them out —
+              tracked door-to-door across Australia.</p>
+            <ul class="text-[12px] text-body-soft flex flex-wrap gap-1.5 mt-auto">
+              <li class="px-2 py-1 bg-cream-2 rounded-md">Stock control</li>
+              <li class="px-2 py-1 bg-cream-2 rounded-md">Kitting</li>
+              <li class="px-2 py-1 bg-cream-2 rounded-md">Tracked dispatch</li>
+            </ul>
+          </article>
 
-            <article class="svc-row">
-              <span class="svc-row__num">05</span>
-              <div>
-                <h3>Warehousing &amp; Fulfilment</h3>
-                <p>Inventory visibility, pick-pack-ship and distribution for collateral, kits and campaigns.</p>
-              </div>
-              <ul>
-                <li>Stock control</li>
-                <li>Campaign kitting</li>
-                <li>Tracked dispatch</li>
-              </ul>
-            </article>
+          <article class="group bg-white rounded-2xl border border-line p-6 hover:border-site transition-colors flex flex-col">
+            <div class="flex items-start justify-between gap-3 mb-4">
+              <span class="font-display text-[11px] uppercase tracking-[0.16em] text-site">06</span>
+              <span class="text-[10px] uppercase tracking-[0.14em] text-body-soft">Portals</span>
+            </div>
+            <h3 class="text-[17px] m-0 mb-2">Online ordering portals</h3>
+            <p class="text-[13px] text-body-soft m-0 mb-4">Set up locked templates and approvals so your team can order
+              on-brand print without back-and-forth.</p>
+            <ul class="text-[12px] text-body-soft flex flex-wrap gap-1.5 mt-auto">
+              <li class="px-2 py-1 bg-cream-2 rounded-md">Templates</li>
+              <li class="px-2 py-1 bg-cream-2 rounded-md">Approvals</li>
+              <li class="px-2 py-1 bg-cream-2 rounded-md">Spend reporting</li>
+            </ul>
+          </article>
 
-            <article class="svc-row">
-              <span class="svc-row__num">06</span>
-              <div>
-                <h3>Ordering Portals &amp; Brand Control</h3>
-                <p>Locked templates, approval flows, pre-press checks and standards enforcement.</p>
-              </div>
-              <ul>
-                <li>Template control</li>
-                <li>Approval workflows</li>
-                <li>Spend reporting</li>
-              </ul>
-            </article>
+          <article class="group bg-white rounded-2xl border border-line p-6 hover:border-site transition-colors flex flex-col">
+            <div class="flex items-start justify-between gap-3 mb-4">
+              <span class="font-display text-[11px] uppercase tracking-[0.16em] text-site">07</span>
+              <span class="text-[10px] uppercase tracking-[0.14em] text-body-soft">Merchandise</span>
+            </div>
+            <h3 class="text-[17px] m-0 mb-2">Branded merch &amp; gifts</h3>
+            <p class="text-[13px] text-body-soft m-0 mb-4">Branded apparel, drinkware, gifts and event packs — sourced
+              from trusted Aussie suppliers.</p>
+            <ul class="text-[12px] text-body-soft flex flex-wrap gap-1.5 mt-auto">
+              <li class="px-2 py-1 bg-cream-2 rounded-md">Apparel</li>
+              <li class="px-2 py-1 bg-cream-2 rounded-md">Drinkware</li>
+              <li class="px-2 py-1 bg-cream-2 rounded-md">Event packs</li>
+            </ul>
+          </article>
 
-            <article class="svc-row">
-              <span class="svc-row__num">07</span>
-              <div>
-                <h3>Promotional Merchandise</h3>
-                <p>Apparel, drinkware, gifting and event packs sourced through vetted merchandise partners.</p>
-              </div>
-              <ul>
-                <li>Branded apparel</li>
-                <li>Drinkware</li>
-                <li>Event packs</li>
-              </ul>
-            </article>
+          <article class="group bg-white rounded-2xl border border-line p-6 hover:border-site transition-colors flex flex-col">
+            <div class="flex items-start justify-between gap-3 mb-4">
+              <span class="font-display text-[11px] uppercase tracking-[0.16em] text-site">08</span>
+              <span class="text-[10px] uppercase tracking-[0.14em] text-body-soft">Procurement</span>
+            </div>
+            <h3 class="text-[17px] m-0 mb-2">Smarter print buying</h3>
+            <p class="text-[13px] text-body-soft m-0 mb-4">We review your specs, benchmark suppliers and pull
+              everything into one clear invoice.</p>
+            <ul class="text-[12px] text-body-soft flex flex-wrap gap-1.5 mt-auto">
+              <li class="px-2 py-1 bg-cream-2 rounded-md">Spec rationalisation</li>
+              <li class="px-2 py-1 bg-cream-2 rounded-md">Benchmarking</li>
+              <li class="px-2 py-1 bg-cream-2 rounded-md">Reporting</li>
+            </ul>
+          </article>
 
-            <article class="svc-row svc-row--cta">
-              <span class="svc-row__num">08</span>
-              <div>
-                <h3>Strategic Print Procurement</h3>
-                <p>Specification rationalisation, supplier benchmarking and transparent consolidated billing.</p>
-              </div>
-              <a href="contact.html" class="tlink">Start a benchmark
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
-              </a>
-            </article>
-          </div>
+          <!-- Inline CTA card -->
+          <article class="bg-ink text-cream rounded-2xl p-6 flex flex-col justify-between min-h-[200px]">
+            <div>
+              <span class="font-display text-[11px] uppercase tracking-[0.16em]" style="color: var(--color-brand-sky);">Start here</span>
+              <h3 class="text-[18px] m-0 mt-2 text-cream leading-[1.25]">Not sure where to start? We'll have a look at what you're doing now.</h3>
+            </div>
+            <a href="contact.html" class="inline-flex items-center gap-2 text-[13px] font-display uppercase tracking-[0.14em] mt-4"
+              style="color: var(--color-brand-sky);">
+              Get a free review
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"
+                class="shrink-0" aria-hidden="true">
+                <path d="M2 7h10M8 3l4 4-4 4" />
+              </svg>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+       CAPABILITY STATS STRIP
+       ========================================================= -->
+    <section class="section section-ink" aria-label="Capability stats">
+      <div class="wrap grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+        <div>
+          <div class="font-display text-[clamp(32px,4vw,48px)] leading-none" style="color: var(--color-brand-sky);">25+</div>
+          <div class="text-[12px] uppercase tracking-[0.14em] text-cream/65 mt-2">Years in market</div>
+        </div>
+        <div>
+          <div class="font-display text-[clamp(32px,4vw,48px)] leading-none" style="color: var(--color-brand-sky);">200+</div>
+          <div class="text-[12px] uppercase tracking-[0.14em] text-cream/65 mt-2">Vetted suppliers</div>
+        </div>
+        <div>
+          <div class="font-display text-[clamp(32px,4vw,48px)] leading-none" style="color: var(--color-brand-sky);">96%</div>
+          <div class="text-[12px] uppercase tracking-[0.14em] text-cream/65 mt-2">On-time delivery</div>
+        </div>
+        <div>
+          <div class="font-display text-[clamp(32px,4vw,48px)] leading-none" style="color: var(--color-brand-sky);">100%</div>
+          <div class="text-[12px] uppercase tracking-[0.14em] text-cream/65 mt-2">Carbon-neutral quotes</div>
         </div>
       </div>
     </section>
@@ -295,85 +431,321 @@
     <section class="section bg-white" aria-labelledby="proc-h">
       <div class="wrap">
         <div class="max-w-3xl mb-12">
-          <span class="eyebrow">How we work</span>
-          <h2 id="proc-h" class="text-[clamp(28px,3.4vw,44px)] m-0">From brief to fulfilment — one accountable workflow.</h2>
+          <p class="eyebrow eyebrow-clay">How we work</p>
+          <h2 id="proc-h" class="text-[clamp(34px,4vw,52px)] m-0 leading-[1.05]">
+            From your brief to your door — how it works.
+          </h2>
         </div>
 
-        <ol class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-3">
-          <li class="bg-cream-2/50 rounded-2xl p-6 border border-line">
-            <div class="font-display text-[11px] uppercase tracking-[0.16em] text-site mb-3">Step 1</div>
-            <h3 class="m-0 mb-2 text-[18px]">Brief</h3>
-            <p class="m-0 text-body-soft text-[14px]">Scope, specs, deadline, brand inputs.</p>
-          </li>
-          <li class="bg-cream-2/50 rounded-2xl p-6 border border-line">
-            <div class="font-display text-[11px] uppercase tracking-[0.16em] text-site mb-3">Step 2</div>
-            <h3 class="m-0 mb-2 text-[18px]">Source</h3>
-            <p class="m-0 text-body-soft text-[14px]">Best-fit supplier tendered against the brief.</p>
-          </li>
-          <li class="bg-cream-2/50 rounded-2xl p-6 border border-line">
-            <div class="font-display text-[11px] uppercase tracking-[0.16em] text-site mb-3">Step 3</div>
-            <h3 class="m-0 mb-2 text-[18px]">Proof</h3>
-            <p class="m-0 text-body-soft text-[14px]">Pre-press audit, colour control, client sign-off.</p>
-          </li>
-          <li class="bg-cream-2/50 rounded-2xl p-6 border border-line">
-            <div class="font-display text-[11px] uppercase tracking-[0.16em] text-site mb-3">Step 4</div>
-            <h3 class="m-0 mb-2 text-[18px]">Press</h3>
-            <p class="m-0 text-body-soft text-[14px]">On-press sign-off and quality monitoring.</p>
-          </li>
-          <li class="bg-cream-2/50 rounded-2xl p-6 border border-line">
-            <div class="font-display text-[11px] uppercase tracking-[0.16em] text-site mb-3">Step 5</div>
-            <h3 class="m-0 mb-2 text-[18px]">Fulfil</h3>
-            <p class="m-0 text-body-soft text-[14px]">National pick-pack-ship and tracked delivery.</p>
-          </li>
-          <li class="bg-cream-2/50 rounded-2xl p-6 border border-line">
-            <div class="font-display text-[11px] uppercase tracking-[0.16em] text-site mb-3">Step 6</div>
-            <h3 class="m-0 mb-2 text-[18px]">Report</h3>
-            <p class="m-0 text-body-soft text-[14px]">Quarterly transparency, savings, sustainability.</p>
-          </li>
-        </ol>
+        <div class="process-stepper" data-process>
+          <!-- Stepper rail -->
+          <div class="relative">
+            <div class="absolute top-5 left-0 right-0 h-px bg-line hidden md:block" aria-hidden="true"></div>
+            <div class="absolute top-5 left-0 h-px bg-site hidden md:block transition-all duration-500"
+              data-process-progress style="width: 0%;" aria-hidden="true"></div>
+
+            <div role="tablist" aria-label="Our process" class="grid grid-cols-3 md:grid-cols-6 gap-3 md:gap-2 relative">
+              <button type="button" role="tab" data-step="1" aria-selected="true"
+                class="process-step group flex flex-col items-center text-center gap-2 focus:outline-none">
+                <span class="process-dot">1</span>
+                <span class="process-label">Brief</span>
+              </button>
+              <button type="button" role="tab" data-step="2" aria-selected="false"
+                class="process-step group flex flex-col items-center text-center gap-2 focus:outline-none">
+                <span class="process-dot">2</span>
+                <span class="process-label">Source</span>
+              </button>
+              <button type="button" role="tab" data-step="3" aria-selected="false"
+                class="process-step group flex flex-col items-center text-center gap-2 focus:outline-none">
+                <span class="process-dot">3</span>
+                <span class="process-label">Proof</span>
+              </button>
+              <button type="button" role="tab" data-step="4" aria-selected="false"
+                class="process-step group flex flex-col items-center text-center gap-2 focus:outline-none">
+                <span class="process-dot">4</span>
+                <span class="process-label">Press</span>
+              </button>
+              <button type="button" role="tab" data-step="5" aria-selected="false"
+                class="process-step group flex flex-col items-center text-center gap-2 focus:outline-none">
+                <span class="process-dot">5</span>
+                <span class="process-label">Fulfil</span>
+              </button>
+              <button type="button" role="tab" data-step="6" aria-selected="false"
+                class="process-step group flex flex-col items-center text-center gap-2 focus:outline-none">
+                <span class="process-dot">6</span>
+                <span class="process-label">Report</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Detail panel -->
+          <div class="mt-10 md:mt-12 bg-cream-2/50 border border-line rounded-2xl p-6 md:p-8 min-h-[260px]"
+            data-process-panel>
+            <div class="grid grid-cols-1 md:grid-cols-[1fr_1.4fr] gap-6 md:gap-10 items-start">
+              <div>
+                <div class="font-display text-[11px] uppercase tracking-[0.16em] text-site mb-2"
+                  data-process-eyebrow>Step 01</div>
+                <h3 class="text-[clamp(20px,2vw,28px)] m-0 mb-3 leading-[1.2]" data-process-title>Brief</h3>
+                <p class="text-[14px] text-body-soft m-0" data-process-desc>
+                  Scope, specifications, deadlines and brand inputs captured in a single intake. One point of contact,
+                  one source of truth.
+                </p>
+                <div class="flex items-center gap-4 mt-5 text-[12px] text-body-soft">
+                  <span class="inline-flex items-center gap-1.5">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                      aria-hidden="true">
+                      <circle cx="12" cy="12" r="10" />
+                      <path d="M12 6v6l4 2" />
+                    </svg>
+                    <span data-process-duration>1–2 days</span>
+                  </span>
+                  <span class="inline-flex items-center gap-1.5">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                      aria-hidden="true">
+                      <path d="M4 4h16v16H4z M4 9h16" />
+                    </svg>
+                    <span data-process-output>Project brief document</span>
+                  </span>
+                </div>
+              </div>
+
+              <div>
+                <div class="text-[11px] uppercase tracking-[0.14em] text-body-soft mb-3 font-display">Deliverables</div>
+                <ul class="space-y-2.5" data-process-deliverables></ul>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between mt-8 pt-6 border-t border-line">
+              <button type="button" data-process-prev
+                class="inline-flex items-center gap-2 text-[13px] font-display uppercase tracking-[0.14em] text-body-soft hover:text-site transition-colors disabled:opacity-30 disabled:cursor-not-allowed">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"
+                  aria-hidden="true"><path d="M12 7H2M6 3L2 7l4 4" /></svg>
+                Previous
+              </button>
+              <div class="text-[12px] text-body-soft font-display tracking-[0.12em]">
+                <span data-process-current>01</span> / 06
+              </div>
+              <button type="button" data-process-next
+                class="inline-flex items-center gap-2 text-[13px] font-display uppercase tracking-[0.14em] text-site hover:text-ink transition-colors disabled:opacity-30 disabled:cursor-not-allowed">
+                Next
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"
+                  aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4" /></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+       PROOF / OUTCOMES
+       ========================================================= -->
+    <section class="section bg-cream-2" aria-labelledby="proof-h">
+      <div class="wrap">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+          <div class="relative rounded-2xl overflow-hidden aspect-[4/3] bg-ink">
+            <img src="https://images.unsplash.com/photo-1456735190827-d1262f71b8a3?auto=format&fit=crop&w=1200&q=80"
+              alt="Print production floor" loading="lazy" class="w-full h-full object-cover" />
+            <div class="absolute bottom-4 left-4 right-4 grid grid-cols-3 gap-2">
+              <div class="bg-white/95 backdrop-blur rounded-lg p-3 text-center">
+                <div class="font-display text-xl text-site">-18%</div>
+                <div class="text-[10px] uppercase tracking-[0.12em] text-body-soft mt-0.5">Spend</div>
+              </div>
+              <div class="bg-white/95 backdrop-blur rounded-lg p-3 text-center">
+                <div class="font-display text-xl text-site">-42%</div>
+                <div class="text-[10px] uppercase tracking-[0.12em] text-body-soft mt-0.5">SKU count</div>
+              </div>
+              <div class="bg-white/95 backdrop-blur rounded-lg p-3 text-center">
+                <div class="font-display text-xl text-site">98%</div>
+                <div class="text-[10px] uppercase tracking-[0.12em] text-body-soft mt-0.5">On-time</div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <p class="eyebrow eyebrow-indigo">Outcomes</p>
+            <h2 id="proof-h" class="text-[clamp(28px,3.2vw,40px)] m-0 leading-[1.1]">
+              A real example — what one team can do.
+            </h2>
+            <p class="text-body-soft mt-5">
+              An Aussie retail brand was juggling 14 print suppliers. They moved everything to Horizon. Within a year
+              their print bill was down 18% and 98% of jobs were delivered on time.
+            </p>
+            <ul class="mt-5 space-y-3 text-[14px]">
+              <li class="flex items-start gap-3">
+                <span class="mt-1 w-5 h-5 rounded-full bg-site/15 text-site flex items-center justify-center shrink-0">
+                  <svg width="11" height="11" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"
+                    aria-hidden="true"><path d="M2 7l3.5 3.5L12 4" /></svg>
+                </span>
+                <span class="text-body">One contact looking after 480 stores around Australia.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-1 w-5 h-5 rounded-full bg-site/15 text-site flex items-center justify-center shrink-0">
+                  <svg width="11" height="11" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"
+                    aria-hidden="true"><path d="M2 7l3.5 3.5L12 4" /></svg>
+                </span>
+                <span class="text-body">A locked online portal stopped off-brand print going out.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-1 w-5 h-5 rounded-full bg-site/15 text-site flex items-center justify-center shrink-0">
+                  <svg width="11" height="11" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"
+                    aria-hidden="true"><path d="M2 7l3.5 3.5L12 4" /></svg>
+                </span>
+                <span class="text-body">Clear quarterly reports on spend, savings and carbon offsets.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- =========================================================
        INDUSTRIES
        ========================================================= -->
-    <section class="section bg-cream-2/40" aria-labelledby="ind-h">
+    <section class="section bg-white" aria-labelledby="ind-h">
       <div class="wrap">
-        <div class="max-w-3xl mb-10">
-          <span class="eyebrow eyebrow-clay">Who we work with</span>
-          <h2 id="ind-h" class="text-[clamp(28px,3.4vw,44px)] m-0">Trusted across regulated and consumer industries.</h2>
+        <div class="max-w-3xl mb-12">
+          <p class="eyebrow eyebrow-clay">Who we work with</p>
+          <h2 id="ind-h" class="text-[clamp(34px,4vw,52px)] m-0 leading-[1.05]">
+            Industries we work with.
+          </h2>
         </div>
 
         <ul class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
-          <li class="bg-white rounded-xl border border-line p-5 text-center font-display text-[14px] text-ink hover:border-site hover:text-site transition-colors">Banking &amp; Finance</li>
-          <li class="bg-white rounded-xl border border-line p-5 text-center font-display text-[14px] text-ink hover:border-site hover:text-site transition-colors">Health &amp; Pharma</li>
-          <li class="bg-white rounded-xl border border-line p-5 text-center font-display text-[14px] text-ink hover:border-site hover:text-site transition-colors">E-Commerce</li>
-          <li class="bg-white rounded-xl border border-line p-5 text-center font-display text-[14px] text-ink hover:border-site hover:text-site transition-colors">Not-For-Profit</li>
-          <li class="bg-white rounded-xl border border-line p-5 text-center font-display text-[14px] text-ink hover:border-site hover:text-site transition-colors">Hospitality</li>
-          <li class="bg-white rounded-xl border border-line p-5 text-center font-display text-[14px] text-ink hover:border-site hover:text-site transition-colors">Government</li>
+          <li class="bg-cream-2/40 rounded-xl border border-line p-5 text-center font-display text-[13px] text-ink hover:border-site hover:text-site hover:bg-white transition-colors">Banking &amp; Finance</li>
+          <li class="bg-cream-2/40 rounded-xl border border-line p-5 text-center font-display text-[13px] text-ink hover:border-site hover:text-site hover:bg-white transition-colors">Health &amp; Pharma</li>
+          <li class="bg-cream-2/40 rounded-xl border border-line p-5 text-center font-display text-[13px] text-ink hover:border-site hover:text-site hover:bg-white transition-colors">E-Commerce</li>
+          <li class="bg-cream-2/40 rounded-xl border border-line p-5 text-center font-display text-[13px] text-ink hover:border-site hover:text-site hover:bg-white transition-colors">Not-For-Profit</li>
+          <li class="bg-cream-2/40 rounded-xl border border-line p-5 text-center font-display text-[13px] text-ink hover:border-site hover:text-site hover:bg-white transition-colors">Hospitality</li>
+          <li class="bg-cream-2/40 rounded-xl border border-line p-5 text-center font-display text-[13px] text-ink hover:border-site hover:text-site hover:bg-white transition-colors">Government</li>
         </ul>
       </div>
     </section>
 
     <!-- =========================================================
+       FAQ
+       ========================================================= -->
+    <section class="section bg-[#fffef9]" id="faq" aria-labelledby="faq-h">
+      <div class="wrap">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <h2 id="faq-h" class="text-[clamp(36px,4.4vw,60px)] mb-4">Frequently Asked Questions</h2>
+          <p class="text-body-soft m-0">Answers to common questions about our services, process and how we work — so
+            you know exactly what to expect.</p>
+        </div>
+
+        <div class="flex flex-col gap-3 max-w-4xl mx-auto" role="list">
+          <div class="faq2__item is-open" role="listitem">
+            <button class="faq2__btn" aria-expanded="true" aria-controls="svc-faq-1">
+              <span>Do you own the printing presses?</span>
+              <span class="faq2__chev" aria-hidden="true">
+                <svg class="w-4 h-4" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M3 9l4-4 4 4" />
+                </svg>
+              </span>
+            </button>
+            <div class="faq2__body" id="svc-faq-1">
+              <div>
+                <p>No. We're supplier-neutral. Every brief is tendered to the best-fit producer in our vetted network —
+                  that's how we keep pricing honest and quality high.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq2__item" role="listitem">
+            <button class="faq2__btn" aria-expanded="false" aria-controls="svc-faq-2">
+              <span>What's the typical onboarding timeline?</span>
+              <span class="faq2__chev" aria-hidden="true"><svg class="w-4 h-4" viewBox="0 0 14 14" fill="none"
+                  stroke="currentColor" stroke-width="2">
+                  <path d="M3 9l4-4 4 4" />
+                </svg></span>
+            </button>
+            <div class="faq2__body" id="svc-faq-2">
+              <div>
+                <p>Two to four weeks for most brands. We audit current spend, rationalise specs, set up the brand
+                  portal and run a benchmark tender on your top SKUs.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq2__item" role="listitem">
+            <button class="faq2__btn" aria-expanded="false" aria-controls="svc-faq-3">
+              <span>How do you handle approvals and brand sign-off?</span>
+              <span class="faq2__chev" aria-hidden="true"><svg class="w-4 h-4" viewBox="0 0 14 14" fill="none"
+                  stroke="currentColor" stroke-width="2">
+                  <path d="M3 9l4-4 4 4" />
+                </svg></span>
+            </button>
+            <div class="faq2__body" id="svc-faq-3">
+              <div>
+                <p>Locked templates plus an approval workflow. Pre-press audits every file, colour is matched to brand
+                  profile, and named approvers sign off before press.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq2__item" role="listitem">
+            <button class="faq2__btn" aria-expanded="false" aria-controls="svc-faq-4">
+              <span>Is sustainability built in or an add-on?</span>
+              <span class="faq2__chev" aria-hidden="true"><svg class="w-4 h-4" viewBox="0 0 14 14" fill="none"
+                  stroke="currentColor" stroke-width="2">
+                  <path d="M3 9l4-4 4 4" />
+                </svg></span>
+            </button>
+            <div class="faq2__body" id="svc-faq-4">
+              <div>
+                <p>Built in. Every quote is carbon-neutral by default, sourced from SGP-certified production where
+                  available, with quarterly reporting on offsets.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq2__item" role="listitem">
+            <button class="faq2__btn" aria-expanded="false" aria-controls="svc-faq-5">
+              <span>Can you handle nationwide distribution?</span>
+              <span class="faq2__chev" aria-hidden="true"><svg class="w-4 h-4" viewBox="0 0 14 14" fill="none"
+                  stroke="currentColor" stroke-width="2">
+                  <path d="M3 9l4-4 4 4" />
+                </svg></span>
+            </button>
+            <div class="faq2__body" id="svc-faq-5">
+              <div>
+                <p>Yes. We pick-pack-ship from a Warwick Farm hub with tracked dispatch Australia-wide, plus campaign
+                  kitting and stock visibility.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /FAQ -->
+
+    <!-- =========================================================
        CTA
        ========================================================= -->
-    <section class="relative isolate overflow-hidden text-cream py-20 md:py-28" aria-labelledby="cta-h">
+    <section class="section relative isolate overflow-hidden text-cream" aria-labelledby="cta-h">
       <div class="absolute inset-0 -z-10">
         <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=2000&q=80"
-          alt="" width="2000" height="1125" loading="lazy" decoding="async"
-          class="w-full h-full object-cover" />
-        <div class="absolute inset-0" style="background: linear-gradient(110deg, rgba(20,25,31,0.92) 0%, rgba(20,25,31,0.72) 60%, rgba(20,25,31,0.55) 100%);"></div>
+          alt="" width="2000" height="1125" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+        <div class="absolute inset-0"
+          style="background: linear-gradient(110deg, rgba(20,25,31,0.92) 0%, rgba(20,25,31,0.72) 60%, rgba(20,25,31,0.55) 100%);"></div>
       </div>
-      <div class="wrap flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
-        <div class="max-w-xl">
-          <span class="eyebrow" style="color: var(--color-brand-sky);">Next step</span>
-          <h2 id="cta-h" class="text-cream text-[clamp(28px,3.2vw,42px)] m-0">Benchmark your current print spend.</h2>
+      <div class="wrap flex flex-col md:flex-row md:items-center justify-between gap-8">
+        <div class="max-w-xl flex-1">
+          <p class="eyebrow eyebrow-indigo text-cream/85">Next step</p>
+          <h2 id="cta-h" class="text-cream text-[clamp(28px,3.4vw,44px)] m-0 leading-[1.1]">
+            See where you could save on print.
+          </h2>
+          <p class="mt-4 m-0" style="color: rgba(255,250,235,.78);">
+            Send us your last quarter of print costs — we'll show you where 10–20% is hiding.
+          </p>
         </div>
-        <div class="flex flex-wrap gap-4">
+        <div class="flex flex-wrap gap-3">
           <a href="contact.html" class="btn btn-white">
             Request a quote
-            <svg class="arrow" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+            <svg class="arrow" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6"
+              aria-hidden="true">
+              <path d="M2 7h10M8 3l4 4-4 4" />
+            </svg>
           </a>
           <a href="tel:1300377377" class="btn btn-ghost-cream">1300 377 377</a>
         </div>
@@ -387,6 +759,112 @@
   <script src="layout/navbar.js" defer></script>
   <script src="layout/footer.js" defer></script>
   <script src="assets/js/main.js" defer></script>
+
+  <script>
+    (function () {
+      const root = document.querySelector('[data-process]');
+      if (!root) return;
+
+      const steps = [
+        {
+          n: '01', title: 'Brief',
+          desc: 'Scope, specifications, deadlines and brand inputs captured in a single intake. One point of contact, one source of truth.',
+          duration: '1–2 days', output: 'Project brief document',
+          deliverables: ['Scope &amp; spec sheet', 'Brand &amp; colour standards captured', 'Budget &amp; deadline confirmed', 'Stakeholder approver named']
+        },
+        {
+          n: '02', title: 'Source',
+          desc: 'Best-fit supplier tendered against the brief. Supplier-neutral — we route to the producer built for the job.',
+          duration: '2–3 days', output: 'Benchmarked quote',
+          deliverables: ['Tender to 3+ vetted suppliers', 'Side-by-side benchmark', 'Recommended producer + rationale', 'Lead time confirmed']
+        },
+        {
+          n: '03', title: 'Proof',
+          desc: 'Pre-press audit, colour profile alignment and client sign-off before any sheet hits the press.',
+          duration: '1–3 days', output: 'Signed-off proof',
+          deliverables: ['Pre-press file check', 'Colour proof to brand profile', 'Hard or soft proof for approval', 'Named-approver sign-off']
+        },
+        {
+          n: '04', title: 'Press',
+          desc: 'On-press attendance, sheet sign-off and live quality monitoring across the print run.',
+          duration: 'Run-dependent', output: 'QC-passed stock',
+          deliverables: ['Press-side sheet check', 'In-line colour monitoring', 'Bindery &amp; finishing oversight', 'QC report on completion']
+        },
+        {
+          n: '05', title: 'Fulfil',
+          desc: 'Pick, pack and ship from a Warwick Farm hub with tracked dispatch nationwide. Kitting available for campaigns.',
+          duration: '24–72 hrs', output: 'Tracked delivery',
+          deliverables: ['Warehouse intake &amp; QC', 'Pick-pack to brief', 'Campaign kitting where required', 'Tracked dispatch AU-wide']
+        },
+        {
+          n: '06', title: 'Report',
+          desc: 'Quarterly transparency on spend, savings, supplier performance and sustainability outcomes.',
+          duration: 'Quarterly', output: 'Performance dashboard',
+          deliverables: ['Spend &amp; savings summary', 'Supplier performance scores', 'Carbon offset reporting', 'Forward-quarter forecast']
+        }
+      ];
+
+      const tabs = root.querySelectorAll('[role="tab"]');
+      const progress = root.querySelector('[data-process-progress]');
+      const eyebrow = root.querySelector('[data-process-eyebrow]');
+      const title = root.querySelector('[data-process-title]');
+      const desc = root.querySelector('[data-process-desc]');
+      const duration = root.querySelector('[data-process-duration]');
+      const output = root.querySelector('[data-process-output]');
+      const deliverables = root.querySelector('[data-process-deliverables]');
+      const current = root.querySelector('[data-process-current]');
+      const prevBtn = root.querySelector('[data-process-prev]');
+      const nextBtn = root.querySelector('[data-process-next]');
+
+      let active = 0;
+
+      function render(idx) {
+        active = idx;
+        const s = steps[idx];
+
+        tabs.forEach((t, i) => {
+          t.setAttribute('aria-selected', i === idx ? 'true' : 'false');
+          t.classList.toggle('is-complete', i < idx);
+        });
+
+        if (progress) {
+          const pct = tabs.length > 1 ? (idx / (tabs.length - 1)) * 100 : 0;
+          progress.style.width = pct + '%';
+        }
+
+        eyebrow.textContent = 'Step ' + s.n;
+        title.textContent = s.title;
+        desc.textContent = s.desc;
+        duration.textContent = s.duration;
+        output.textContent = s.output;
+        current.textContent = s.n;
+
+        deliverables.innerHTML = s.deliverables.map(d => '<li>' + d + '</li>').join('');
+
+        prevBtn.disabled = idx === 0;
+        nextBtn.disabled = idx === steps.length - 1;
+
+        // restart fade animation
+        const panel = root.querySelector('[data-process-panel]');
+        panel.style.animation = 'none';
+        // eslint-disable-next-line no-unused-expressions
+        panel.offsetHeight;
+        panel.style.animation = '';
+      }
+
+      tabs.forEach((t, i) => {
+        t.addEventListener('click', () => render(i));
+        t.addEventListener('keydown', (e) => {
+          if (e.key === 'ArrowRight') { e.preventDefault(); render(Math.min(steps.length - 1, active + 1)); tabs[Math.min(steps.length - 1, active)].focus(); }
+          if (e.key === 'ArrowLeft')  { e.preventDefault(); render(Math.max(0, active - 1)); tabs[Math.max(0, active)].focus(); }
+        });
+      });
+      prevBtn.addEventListener('click', () => render(Math.max(0, active - 1)));
+      nextBtn.addEventListener('click', () => render(Math.min(steps.length - 1, active + 1)));
+
+      render(0);
+    })();
+  </script>
 </body>
 
 </html>

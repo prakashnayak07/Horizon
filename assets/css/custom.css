@@ -41,6 +41,86 @@
 
 
 /* ─── Your styles below ─────────────────────────────────────── */
+
+/* ─── Interactive Process Stepper ───────────────────────────── */
+.process-stepper .process-step {
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
+.process-stepper .process-dot {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background: #FFFAEB;
+  border: 1px solid var(--color-line, #e5e0d4);
+  color: var(--color-body-soft, #6b6b6b);
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .25s ease;
+}
+.process-stepper .process-label {
+  font-family: 'Oswald', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-body-soft, #6b6b6b);
+  transition: color .25s ease;
+}
+.process-stepper .process-step:hover .process-dot {
+  border-color: var(--color-site, #0077BC);
+  color: var(--color-site, #0077BC);
+}
+.process-stepper .process-step:hover .process-label {
+  color: var(--color-ink, #14191F);
+}
+.process-stepper .process-step[aria-selected="true"] .process-dot {
+  background: var(--color-site, #0077BC);
+  border-color: var(--color-site, #0077BC);
+  color: #FFFAEB;
+  box-shadow: 0 0 0 4px rgba(0,119,188,0.12);
+}
+.process-stepper .process-step[aria-selected="true"] .process-label {
+  color: var(--color-ink, #14191F);
+  font-weight: 600;
+}
+.process-stepper .process-step.is-complete .process-dot {
+  background: var(--color-site, #0077BC);
+  border-color: var(--color-site, #0077BC);
+  color: #FFFAEB;
+  opacity: .55;
+}
+.process-stepper [data-process-panel] {
+  animation: processFade .35s ease;
+}
+@keyframes processFade {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.process-stepper [data-process-deliverables] li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--color-body, #2a2a2a);
+}
+.process-stepper [data-process-deliverables] li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--color-site, #0077BC);
+  margin-top: 8px;
+  flex-shrink: 0;
+}
+
         /* Services page refresh */
         .svc-hero {
           position: relative;
