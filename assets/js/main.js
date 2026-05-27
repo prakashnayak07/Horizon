@@ -144,17 +144,18 @@
     // Mobile menu
     const menuBtn = document.getElementById('menu-btn');
     const menu = document.getElementById('mobile-menu');
-    menuBtn?.addEventListener('click', () => {
-      const open = menu.classList.toggle('open');
+    const setMenu = (open) => {
+      menu.classList.toggle('is-open', open);
+      menu.setAttribute('aria-hidden', open ? 'false' : 'true');
       menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      document.body.classList.toggle('menu-open', open);
       menuBtn.querySelector('svg').innerHTML = open
         ? '<path d="M6 6l12 12M6 18L18 6" stroke="currentColor" stroke-width="1.6" fill="none"/>'
         : '<path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.6" fill="none"/>';
-    });
-    menu?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-      menu.classList.remove('open');
-      menuBtn.setAttribute('aria-expanded', 'false');
-    }));
+    };
+    menuBtn?.addEventListener('click', () => setMenu(!menu.classList.contains('is-open')));
+    menu?.querySelectorAll('a').forEach(a => { a.addEventListener('click', () => setMenu(false)); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && menu?.classList.contains('is-open')) setMenu(false); });
 
     // Header scrolled state (lifts pill shadow)
     const header = document.getElementById('site-header');
@@ -233,4 +234,57 @@
         t.addEventListener('mouseenter', trigger);
         t.addEventListener('focusin', trigger);
       });
+    })();
+
+    // Mobile: intercept .sv-tile clicks → show modal popup with details
+    (function () {
+      const tiles = document.querySelectorAll('.sv-tiles > a.sv-tile');
+      if (!tiles.length) return;
+      const mq = window.matchMedia('(max-width: 1023px)');
+
+      const modal = document.createElement('div');
+      modal.className = 'sv-modal';
+      modal.setAttribute('aria-hidden', 'true');
+      modal.innerHTML = `
+        <div class="sv-modal__backdrop" data-close></div>
+        <div class="sv-modal__panel" role="dialog" aria-modal="true">
+          <button type="button" class="sv-modal__close" aria-label="Close" data-close>
+            <svg width="16" height="16" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3l8 8M11 3l-8 8"/></svg>
+          </button>
+          <div class="sv-modal__body"></div>
+          <a class="sv-modal__cta btn btn-primary" href="#">
+            Read more
+            <svg class="arrow" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+          </a>
+        </div>`;
+      document.body.appendChild(modal);
+
+      const body = modal.querySelector('.sv-modal__body');
+      const cta = modal.querySelector('.sv-modal__cta');
+      const open = (tile) => {
+        const pop = tile.querySelector('.sv-tile__pop');
+        if (!pop) return;
+        body.innerHTML = pop.innerHTML;
+        cta.href = tile.getAttribute('href') || '#';
+        modal.classList.add('is-open');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('menu-open');
+      };
+      const close = () => {
+        modal.classList.remove('is-open');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('menu-open');
+      };
+
+      tiles.forEach(t => {
+        t.addEventListener('click', (e) => {
+          if (!mq.matches) return;
+          e.preventDefault();
+          open(t);
+        });
+      });
+      modal.addEventListener('click', (e) => {
+        if (e.target.closest('[data-close]')) close();
+      });
+      document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && modal.classList.contains('is-open')) close(); });
     })();
