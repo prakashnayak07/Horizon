@@ -812,10 +812,17 @@
         }
 
         @media (max-width: 900px) {
-          .vp-item+.vp-item {
-            border-left: 0;
-            border-top: 1px solid rgba(228, 220, 193, .8);
-          }
+          .vp-item { padding: 18px 10px; }
+          .vp-item .vp-ico svg { width: 20px; height: 20px; }
+          .vp-item .vp-ico { margin-bottom: 6px; }
+          .vp-item .vp-title { font-size: 13.5px; line-height: 1.2; margin-bottom: 4px; }
+          .vp-item .vp-sub { font-size: 9px; letter-spacing: .1em; line-height: 1.3; }
+          /* Reset all borders for 2-col grid */
+          .vp-item + .vp-item { border-left: 0; border-top: 0; }
+          /* Right border on left column (1st, 3rd) */
+          .vp-item:nth-child(odd) { border-right: 1px solid rgba(228, 220, 193, .8); }
+          /* Top border on bottom row (3rd, 4th) */
+          .vp-item:nth-child(n+3) { border-top: 1px solid rgba(228, 220, 193, .8); }
         }
         .sv-card {
           position: relative;
