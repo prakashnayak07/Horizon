@@ -78,7 +78,7 @@ document.querySelector('header').innerHTML = `
         </nav>
 
         <div class="flex items-center gap-3">
-          <a href="#login" class="hidden lg:inline-block text-cream/70 text-[13px] font-display uppercase tracking-[0.06em] hover:text-cream transition-colors">Client login</a>
+          <a href="http://www.cullamark.com.au/hpm/index/" target="_blank" rel="noopener" class="hidden lg:inline-block text-cream/70 text-[13px] font-display uppercase tracking-[0.06em] hover:text-cream transition-colors">Client login</a>
           <a href="contact.html" class="btn btn-primary !rounded-full !h-10 !px-5 !text-[13px]">
             Get a quote
             <svg class="arrow" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
