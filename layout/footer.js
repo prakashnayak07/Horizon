@@ -37,11 +37,13 @@
       <div>
         <h5 class="text-brand-sky font-display text-[13px] uppercase tracking-[0.18em] font-medium m-0 mb-5">Services</h5>
         <ul class="list-none p-0 m-0 grid gap-3 text-cream/80 text-[15px]">
-          <li><a href="services.html" class="hover:text-cream transition-colors">Print Procurement</a></li>
-          <li><a href="services.html" class="hover:text-cream transition-colors">Brand Standards</a></li>
-          <li><a href="services.html" class="hover:text-cream transition-colors">Production &amp; Fulfilment</a></li>
-          <li><a href="services.html" class="hover:text-cream transition-colors">Promotional Merch</a></li>
-          <li><a href="sustainability.html" class="hover:text-cream transition-colors">Carbon‑Neutral Print</a></li>
+          <li><a href="digital-variable-data-printing.html" class="hover:text-cream transition-colors">Digital &amp; Variable Data</a></li>
+          <li><a href="web-offset-printing.html" class="hover:text-cream transition-colors">Web Offset Printing</a></li>
+          <li><a href="sheetfed-offset-printing.html" class="hover:text-cream transition-colors">Sheetfed Offset</a></li>
+          <li><a href="print-on-demand-portal.html" class="hover:text-cream transition-colors">Print on Demand Portal</a></li>
+          <li><a href="mailhouse-services.html" class="hover:text-cream transition-colors">Mailhouse Services</a></li>
+          <li><a href="storage-and-distribution.html" class="hover:text-cream transition-colors">Storage &amp; Distribution</a></li>
+          <li><a href="services.html" class="hover:text-cream transition-colors font-medium text-brand-sky">View all services →</a></li>
         </ul>
       </div>
       <div class="col-span-2 sm:col-span-1">
