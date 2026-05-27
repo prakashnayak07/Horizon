@@ -21,11 +21,11 @@
             <path d="M3 5l3 3 3-3" />
           </svg>
         </button>
-        <ul id="lang-menu" role="listbox" aria-labelledby="lang-btn" class="hidden absolute right-0 bottom-full mb-2 min-w-40 rounded-xl border border-brand-sky/30 bg-ink shadow-lg py-1 z-10">
-          <li role="option" data-lang="English" class="px-4 py-2 text-[13px] text-cream hover:bg-brand-sky/10 cursor-pointer" aria-selected="true">English</li>
-          <li role="option" data-lang="Español" class="px-4 py-2 text-[13px] text-cream/85 hover:bg-brand-sky/10 cursor-pointer">Español</li>
-          <li role="option" data-lang="Français" class="px-4 py-2 text-[13px] text-cream/85 hover:bg-brand-sky/10 cursor-pointer">Français</li>
-          <li role="option" data-lang="中文" class="px-4 py-2 text-[13px] text-cream/85 hover:bg-brand-sky/10 cursor-pointer">中文</li>
+        <ul id="lang-menu" role="listbox" aria-labelledby="lang-btn" class="hidden absolute right-0 top-full mt-2 min-w-40 rounded-xl border border-brand-sky/30 shadow-lg py-1 z-10 list-none m-0" style="background:#14191F;">
+          <li role="option" data-lang="English" class="px-4 py-2 text-[13px] hover:bg-brand-sky/10 cursor-pointer" style="color:#F5EFE0;" aria-selected="true">English</li>
+          <li role="option" data-lang="Español" class="px-4 py-2 text-[13px] hover:bg-brand-sky/10 cursor-pointer" style="color:rgba(245,239,224,0.75);">Español</li>
+          <li role="option" data-lang="Français" class="px-4 py-2 text-[13px] hover:bg-brand-sky/10 cursor-pointer" style="color:rgba(245,239,224,0.75);">Français</li>
+          <li role="option" data-lang="中文" class="px-4 py-2 text-[13px] hover:bg-brand-sky/10 cursor-pointer" style="color:rgba(245,239,224,0.75);">中文</li>
         </ul>
       </div>
     </div>
@@ -154,12 +154,10 @@
     opt.addEventListener('click', () => {
       menu.querySelectorAll('[role="option"]').forEach((o) => {
         o.setAttribute('aria-selected', 'false');
-        o.classList.remove('text-cream');
-        o.classList.add('text-cream/85');
+        o.style.color = 'rgba(245,239,224,0.75)';
       });
       opt.setAttribute('aria-selected', 'true');
-      opt.classList.add('text-cream');
-      opt.classList.remove('text-cream/85');
+      opt.style.color = '#F5EFE0';
       current.textContent = opt.dataset.lang;
       close();
     });
