@@ -10,16 +10,24 @@
       <a href="index.html" class="inline-flex items-center" aria-label="Horizon Print Management — home">
         <img src="https://images.squarespace-cdn.com/content/v1/55764a8ae4b0377e73c34806/1542755523480-8UVIX9GP4RKV1ZFBY437/Horizon3.png?format=400w" alt="Horizon Print Management" class="h-9 w-auto" />
       </a>
-      <button class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-brand-sky/50 text-brand-sky text-[13px] hover:bg-brand-sky/10 transition-colors" aria-label="Select language">
-        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <circle cx="12" cy="12" r="9" />
-          <path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18" />
-        </svg>
-        English
-        <svg class="w-3 h-3" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8">
-          <path d="M3 5l3 3 3-3" />
-        </svg>
-      </button>
+      <div class="relative" id="lang-switcher">
+        <button type="button" id="lang-btn" class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-brand-sky/50 text-brand-sky text-[13px] hover:bg-brand-sky/10 transition-colors" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="12" r="9" />
+            <path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18" />
+          </svg>
+          <span id="lang-current">English</span>
+          <svg class="w-3 h-3 transition-transform" id="lang-caret" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M3 5l3 3 3-3" />
+          </svg>
+        </button>
+        <ul id="lang-menu" role="listbox" aria-labelledby="lang-btn" class="hidden absolute right-0 bottom-full mb-2 min-w-40 rounded-xl border border-brand-sky/30 bg-ink shadow-lg py-1 z-10">
+          <li role="option" data-lang="English" class="px-4 py-2 text-[13px] text-cream hover:bg-brand-sky/10 cursor-pointer" aria-selected="true">English</li>
+          <li role="option" data-lang="Español" class="px-4 py-2 text-[13px] text-cream/85 hover:bg-brand-sky/10 cursor-pointer">Español</li>
+          <li role="option" data-lang="Français" class="px-4 py-2 text-[13px] text-cream/85 hover:bg-brand-sky/10 cursor-pointer">Français</li>
+          <li role="option" data-lang="中文" class="px-4 py-2 text-[13px] text-cream/85 hover:bg-brand-sky/10 cursor-pointer">中文</li>
+        </ul>
+      </div>
     </div>
 
     <!-- Link columns -->
@@ -126,4 +134,38 @@
     </div>
   </div>
 `;
+
+  const btn = el.querySelector('#lang-btn');
+  const menu = el.querySelector('#lang-menu');
+  const current = el.querySelector('#lang-current');
+  const caret = el.querySelector('#lang-caret');
+  const close = () => {
+    menu.classList.add('hidden');
+    btn.setAttribute('aria-expanded', 'false');
+    caret.style.transform = '';
+  };
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const open = menu.classList.toggle('hidden');
+    btn.setAttribute('aria-expanded', String(!open));
+    caret.style.transform = open ? '' : 'rotate(180deg)';
+  });
+  menu.querySelectorAll('[role="option"]').forEach((opt) => {
+    opt.addEventListener('click', () => {
+      menu.querySelectorAll('[role="option"]').forEach((o) => {
+        o.setAttribute('aria-selected', 'false');
+        o.classList.remove('text-cream');
+        o.classList.add('text-cream/85');
+      });
+      opt.setAttribute('aria-selected', 'true');
+      opt.classList.add('text-cream');
+      opt.classList.remove('text-cream/85');
+      current.textContent = opt.dataset.lang;
+      close();
+    });
+  });
+  document.addEventListener('click', (e) => {
+    if (!el.querySelector('#lang-switcher').contains(e.target)) close();
+  });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
 })();

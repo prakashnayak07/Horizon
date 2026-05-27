@@ -52,124 +52,153 @@
     <!-- =========================================================
        CONTACT — form + details
        ========================================================= -->
-    <section id="contact-form" class="section bg-cream-2/40">
-      <div class="wrap grid lg:grid-cols-[1.2fr_1fr] gap-12 lg:gap-16">
+    <section class="section bg-[#fafafa]" id="contact-form" aria-labelledby="ct-h">
 
-        <!-- FORM -->
-        <form class="bg-white p-8 md:p-10 shadow-card rounded-2xl" novalidate
-              onsubmit="event.preventDefault(); this.querySelector('[data-success]').classList.remove('hidden'); this.reset();">
-          <h2 class="text-[clamp(28px,3vw,40px)] mb-2">Send us a message</h2>
-          <p class="text-body-soft mb-8">Fields marked <span class="text-accent-clay">*</span> are required.</p>
-
-          <div class="grid sm:grid-cols-2 gap-5">
-            <label class="block">
-              <span class="block font-display text-[12px] uppercase tracking-[0.14em] text-body-soft mb-2">First name <span class="text-accent-clay">*</span></span>
-              <input type="text" name="first" required
-                class="w-full h-12 px-4 border border-line bg-white rounded-lg focus:outline-none focus:border-site focus:ring-2 focus:ring-site/20 transition" />
-            </label>
-            <label class="block">
-              <span class="block font-display text-[12px] uppercase tracking-[0.14em] text-body-soft mb-2">Last name <span class="text-accent-clay">*</span></span>
-              <input type="text" name="last" required
-                class="w-full h-12 px-4 border border-line bg-white rounded-lg focus:outline-none focus:border-site focus:ring-2 focus:ring-site/20 transition" />
-            </label>
-            <label class="block">
-              <span class="block font-display text-[12px] uppercase tracking-[0.14em] text-body-soft mb-2">Work email <span class="text-accent-clay">*</span></span>
-              <input type="email" name="email" required
-                class="w-full h-12 px-4 border border-line bg-white rounded-lg focus:outline-none focus:border-site focus:ring-2 focus:ring-site/20 transition" />
-            </label>
-            <label class="block">
-              <span class="block font-display text-[12px] uppercase tracking-[0.14em] text-body-soft mb-2">Phone</span>
-              <input type="tel" name="phone"
-                class="w-full h-12 px-4 border border-line bg-white rounded-lg focus:outline-none focus:border-site focus:ring-2 focus:ring-site/20 transition" />
-            </label>
-            <label class="block sm:col-span-2">
-              <span class="block font-display text-[12px] uppercase tracking-[0.14em] text-body-soft mb-2">Company</span>
-              <input type="text" name="company"
-                class="w-full h-12 px-4 border border-line bg-white rounded-lg focus:outline-none focus:border-site focus:ring-2 focus:ring-site/20 transition" />
-            </label>
-            <label class="block sm:col-span-2">
-              <span class="block font-display text-[12px] uppercase tracking-[0.14em] text-body-soft mb-2">How can we help? <span class="text-accent-clay">*</span></span>
-              <select name="topic" required
-                class="w-full h-12 px-4 border border-line bg-white rounded-lg focus:outline-none focus:border-site focus:ring-2 focus:ring-site/20 transition">
-                <option value="">Select a topic…</option>
-                <option>Request a quote</option>
-                <option>Benchmark my print spend</option>
-                <option>Strategic print review</option>
-                <option>Sustainability / carbon-neutral print</option>
-                <option>General enquiry</option>
-              </select>
-            </label>
-            <label class="block sm:col-span-2">
-              <span class="block font-display text-[12px] uppercase tracking-[0.14em] text-body-soft mb-2">Message <span class="text-accent-clay">*</span></span>
-              <textarea name="message" rows="5" required
-                class="w-full px-4 py-3 border border-line bg-white rounded-lg focus:outline-none focus:border-site focus:ring-2 focus:ring-site/20 transition resize-y"></textarea>
-            </label>
-            <label class="flex items-start gap-3 sm:col-span-2 text-[14px] text-body-soft">
-              <input type="checkbox" name="consent" required class="mt-1 w-4 h-4 accent-site" />
-              <span>I agree to be contacted about my enquiry under the <a href="#" class="underline underline-offset-2 hover:text-site">Privacy Policy</a>.</span>
-            </label>
-          </div>
-
-          <div class="flex items-center gap-4 mt-8">
-            <button type="submit" class="btn btn-primary">
-              Send message
-              <svg class="arrow" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
-                <path d="M2 7h10M8 3l4 4-4 4" />
-              </svg>
-            </button>
-            <p data-success class="hidden text-accent-leaf font-display text-[13px] uppercase tracking-[0.14em]">
-              ✓ Thanks — we'll be in touch shortly.
-            </p>
-          </div>
-        </form>
-
-        <!-- DETAILS -->
-        <aside class="flex flex-col gap-8">
+      <div class="wrap">
+        <p class="eyebrow">Contact</p>
+        <div class="grid grid-cols-1 lg:grid-cols-[1.15fr_.85fr] gap-10 lg:gap-14 items-start">
+          <!-- LEFT: form -->
           <div>
-            <span class="eyebrow">Direct lines</span>
-            <ul class="space-y-5 mt-4">
-              <li class="flex items-start gap-4">
-                <span class="shrink-0 w-10 h-10 rounded-full bg-ink text-cream inline-flex items-center justify-center">
-                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 4h3l2 5-2.5 1.5a11 11 0 005 5L14 13l5 2v3a2 2 0 01-2 2A15 15 0 013 6a2 2 0 012-2z"/></svg>
-                </span>
-                <div>
-                  <div class="font-display text-[11px] uppercase tracking-[0.16em] text-body-soft">Phone</div>
-                  <a href="tel:1300377377" class="font-display text-xl text-ink hover:text-site transition-colors">1300 377 377</a>
+            <h2 id="ct-h" class="text-[clamp(30px,3.2vw,40px)] mb-3">Tell us about your print.</h2>
+            <p class="text-body-soft max-w-[52ch] m-0 mb-8">A short brief is enough to start. We'll reply within one
+              business day with a benchmark and a plan — no obligation.</p>
+
+            <form class="grid gap-3.5" novalidate>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                <div class="ct-field">
+                  <input id="f-name" name="name" type="text" autocomplete="name" placeholder=" " required />
+                  <label for="f-name">Name <span class="req" aria-hidden="true">*</span></label>
                 </div>
+                <div class="ct-field">
+                  <input id="f-co" name="company" type="text" autocomplete="organization" placeholder=" " required />
+                  <label for="f-co">Company <span class="req" aria-hidden="true">*</span></label>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                <div class="ct-field">
+                  <input id="f-email" name="email" type="email" autocomplete="email" placeholder=" " required />
+                  <label for="f-email">Email <span class="req" aria-hidden="true">*</span></label>
+                </div>
+                <div class="ct-field">
+                  <input id="f-ph" name="phone" type="tel" autocomplete="tel" placeholder=" " />
+                  <label for="f-ph">Phone <span
+                      class="text-body-soft normal-case tracking-normal">(optional)</span></label>
+                </div>
+              </div>
+
+              <div class="ct-field">
+                <select id="f-type" name="type">
+                  <option>Print procurement / strategic management</option>
+                  <option>Production print (offset, digital, large format)</option>
+                  <option>Promotional &amp; branded merchandise</option>
+                  <option>Warehousing &amp; fulfilment</option>
+                  <option>Sustainability / carbon‑neutral certification</option>
+                  <option>Something else</option>
+                </select>
+                <label for="f-type">Project type</label>
+              </div>
+
+              <div class="ct-field">
+                <textarea id="f-msg" name="message" rows="5" placeholder=" "></textarea>
+                <label for="f-msg">Message</label>
+                <p class="ct-hint">Tell us about scope, suppliers, volumes, timing — anything that helps us benchmark.
+                </p>
+              </div>
+
+              <div class="mt-3 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                <button type="submit" class="btn btn-primary">
+                  Send enquiry
+                  <svg class="arrow" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6"
+                    aria-hidden="true">
+                    <path d="M2 7h10M8 3l4 4-4 4" />
+                  </svg>
+                </button>
+                <p class="text-xs text-body-soft max-w-[40ch] m-0">By sending you agree to our handling of this enquiry
+                  under our <a href="#" class="underline underline-offset-2 hover:text-site">Privacy Policy</a>.</p>
+              </div>
+            </form>
+          </div>
+
+          <!-- RIGHT: contact card -->
+          <aside class="bg-ink text-cream rounded-2xl p-6 lg:p-7 lg:sticky lg:top-28" aria-label="HPM contact details">
+            <!-- header -->
+            <div class="flex items-center justify-between gap-3 pb-4 border-b border-line-ink">
+              <h3 class="text-cream font-display text-lg m-0 leading-tight">Talk to us directly</h3>
+              <span
+                class="inline-flex items-center gap-1.5 text-[11px] font-display uppercase tracking-[0.16em] text-brand-sky">
+                <span class="w-1.5 h-1.5 rounded-full bg-accent-leaf"></span> Open now
+              </span>
+            </div>
+
+            <!-- quick action: phone + email -->
+            <div class="grid grid-cols-2 gap-2.5 mt-4">
+              <a href="tel:1300377377"
+                class="group flex flex-col gap-1 rounded-xl bg-ink-soft hover:bg-ink-2 transition-colors px-3.5 py-3">
+                <span
+                  class="inline-flex items-center gap-1.5 text-[11px] font-display uppercase tracking-[0.14em] text-brand-sky">
+                  <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                    aria-hidden="true">
+                    <path
+                      d="M22 16.92V21a1 1 0 01-1.09 1A19 19 0 012 5.09 1 1 0 013 4h4.09a1 1 0 011 .75l1.5 5a1 1 0 01-.29 1L7.21 12.79a16 16 0 006 6l2.05-2.05a1 1 0 011-.29l5 1.5a1 1 0 01.74.97z" />
+                  </svg>
+                  Phone
+                </span>
+                <span class="text-cream text-sm">1300 377 377</span>
+              </a>
+              <a href="mailto:hello@horizonprintmanagement.com.au"
+                class="group flex flex-col gap-1 rounded-xl bg-ink-soft hover:bg-ink-2 transition-colors px-3.5 py-3">
+                <span
+                  class="inline-flex items-center gap-1.5 text-[11px] font-display uppercase tracking-[0.14em] text-brand-sky">
+                  <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                    aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                    <path d="M3 7l9 6 9-6" />
+                  </svg>
+                  Email
+                </span>
+                <span class="text-cream text-sm truncate">hello@horizonprint…</span>
+              </a>
+            </div>
+
+            <!-- address + hours -->
+            <ul class="list-none p-0 m-0 mt-4 grid gap-3 text-sm">
+              <li class="grid grid-cols-[20px_1fr] gap-3 items-start">
+                <svg class="w-4 h-4 mt-0.5 text-brand-sky" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="1.6" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1118 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                <div class="text-cream/85 leading-relaxed">Unit 6, 8 Priddle Street<br />Warwick Farm NSW 2170</div>
               </li>
-              <li class="flex items-start gap-4">
-                <span class="shrink-0 w-10 h-10 rounded-full bg-ink text-cream inline-flex items-center justify-center">
-                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
-                </span>
-                <div>
-                  <div class="font-display text-[11px] uppercase tracking-[0.16em] text-body-soft">Email</div>
-                  <a href="mailto:hello@horizonprintmanagement.com.au" class="font-display text-xl text-ink hover:text-site transition-colors break-all">hello@horizonprintmanagement.com.au</a>
-                </div>
-              </li>
-              <li class="flex items-start gap-4">
-                <span class="shrink-0 w-10 h-10 rounded-full bg-ink text-cream inline-flex items-center justify-center">
-                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22s7-7.5 7-13a7 7 0 10-14 0c0 5.5 7 13 7 13z"/><circle cx="12" cy="9" r="2.5"/></svg>
-                </span>
-                <div>
-                  <div class="font-display text-[11px] uppercase tracking-[0.16em] text-body-soft">Head office</div>
-                  <p class="font-display text-xl text-ink m-0 leading-snug">Warwick Farm<br/>NSW 2170, Australia</p>
-                </div>
+              <li class="grid grid-cols-[20px_1fr] gap-3 items-center">
+                <svg class="w-4 h-4 text-brand-sky" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="1.6" aria-hidden="true">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 7v5l3 2" />
+                </svg>
+                <div class="text-cream/85">Mon–Fri · 8:00am – 5:30pm AEST</div>
               </li>
             </ul>
-          </div>
 
-          <div class="border-t border-line pt-6">
-            <div class="font-display text-[11px] uppercase tracking-[0.16em] text-body-soft mb-2">Hours</div>
-            <p class="m-0 text-body">Monday – Friday<br/>8:30am – 5:30pm AEST</p>
-          </div>
+            <!-- map -->
+            <div class="relative rounded-xl overflow-hidden aspect-[16/9] border border-line-ink mt-5"
+              aria-label="Map of HPM Warwick Farm NSW">
+              <iframe class="w-full h-full border-0 block [filter:grayscale(.15)_contrast(1.02)]" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=150.928%2C-33.926%2C150.956%2C-33.904&amp;layer=mapnik&amp;marker=-33.9148%2C150.9416"
+                title="Map of Horizon Print Management"></iframe>
+              <a class="absolute right-2 bottom-2 font-display text-[10px] uppercase tracking-[0.14em] bg-ink/85 text-cream py-1.5 px-2 rounded border border-cream/15 hover:bg-ink hover:text-brand-sky"
+                href="https://www.openstreetmap.org/?mlat=-33.9148&amp;mlon=150.9416#map=16/-33.9148/150.9416"
+                target="_blank" rel="noopener">Open in Maps ↗</a>
+            </div>
 
-          <div class="rounded-2xl overflow-hidden border border-line aspect-[4/3] bg-cream-2">
-            <iframe
-              src="https://www.openstreetmap.org/export/embed.html?bbox=150.928%2C-33.926%2C150.956%2C-33.904&amp;layer=mapnik&amp;marker=-33.9148%2C150.9416"
-              class="w-full h-full block" loading="lazy"
-              title="Horizon Print Management — Warwick Farm NSW"></iframe>
-          </div>
-        </aside>
+            <!-- response promise -->
+            <p class="mt-4 mb-0 text-[12px] text-cream/55 leading-relaxed">
+              Average first‑response time: <strong class="text-cream">under 4 business hours</strong>.
+            </p>
+          </aside>
+        </div>
       </div>
     </section>
 
