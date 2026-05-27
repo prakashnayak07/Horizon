@@ -2284,13 +2284,14 @@
         .ct-field label {
           position: absolute;
           left: 16px;
-          top: 14px;
+          top: 7px;
           pointer-events: none;
           font-family: 'Oswald', sans-serif;
-          font-size: 11px;
+          font-size: 10px;
           letter-spacing: 0.16em;
           text-transform: uppercase;
           color: #54565A;
+          line-height: 1;
           transition: color 200ms;
         }
 
