@@ -383,11 +383,20 @@
   .my-6 {
     margin-block: calc(var(--spacing) * 6);
   }
+  .-mt-4 {
+    margin-top: calc(var(--spacing) * -4);
+  }
+  .-mt-6 {
+    margin-top: calc(var(--spacing) * -6);
+  }
   .-mt-8 {
     margin-top: calc(var(--spacing) * -8);
   }
   .-mt-\[80px\] {
     margin-top: calc(80px * -1);
+  }
+  .mt-0 {
+    margin-top: calc(var(--spacing) * 0);
   }
   .mt-0\.5 {
     margin-top: calc(var(--spacing) * 0.5);
@@ -509,6 +518,9 @@
   .\!h-10 {
     height: calc(var(--spacing) * 10) !important;
   }
+  .h-1 {
+    height: calc(var(--spacing) * 1);
+  }
   .h-1\.5 {
     height: calc(var(--spacing) * 1.5);
   }
@@ -559,6 +571,9 @@
   }
   .min-h-screen {
     min-height: 100vh;
+  }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
   }
   .w-1\.5 {
     width: calc(var(--spacing) * 1.5);
@@ -765,6 +780,13 @@
   .gap-px {
     gap: 1px;
   }
+  .space-y-2 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 2) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
   .space-y-2\.5 {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 0;
@@ -872,6 +894,9 @@
     border-left-style: var(--tw-border-style);
     border-left-width: 1px;
   }
+  .border-brand-sky {
+    border-color: var(--color-brand-sky);
+  }
   .border-brand-sky\/20 {
     border-color: color-mix(in srgb, #83B1C9 20%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -883,6 +908,9 @@
     @supports (color: color-mix(in lab, red, red)) {
       border-color: color-mix(in oklab, var(--color-brand-sky) 50%, transparent);
     }
+  }
+  .border-cream {
+    border-color: var(--color-cream);
   }
   .border-cream\/15 {
     border-color: color-mix(in srgb, #FFFAEB 15%, transparent);
@@ -938,11 +966,17 @@
   .bg-accent-leaf {
     background-color: var(--color-accent-leaf);
   }
+  .bg-brand-sky {
+    background-color: var(--color-brand-sky);
+  }
   .bg-brand-sky\/25 {
     background-color: color-mix(in srgb, #83B1C9 25%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-brand-sky) 25%, transparent);
     }
+  }
+  .bg-cream {
+    background-color: var(--color-cream);
   }
   .bg-cream-2 {
     background-color: var(--color-cream-2);
@@ -1046,6 +1080,9 @@
   .px-2\.5 {
     padding-inline: calc(var(--spacing) * 2.5);
   }
+  .px-3 {
+    padding-inline: calc(var(--spacing) * 3);
+  }
   .px-3\.5 {
     padding-inline: calc(var(--spacing) * 3.5);
   }
@@ -1090,6 +1127,9 @@
   }
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
+  }
+  .pt-0 {
+    padding-top: calc(var(--spacing) * 0);
   }
   .pt-0\.5 {
     padding-top: calc(var(--spacing) * 0.5);
@@ -1388,6 +1428,9 @@
   .tracking-wide {
     --tw-tracking: var(--tracking-wide);
     letter-spacing: var(--tracking-wide);
+  }
+  .text-wrap {
+    text-wrap: wrap;
   }
   .break-all {
     word-break: break-all;
@@ -1904,6 +1947,11 @@
   .md\:-mt-\[92px\] {
     @media (width >= 48rem) {
       margin-top: calc(92px * -1);
+    }
+  }
+  .md\:mt-8 {
+    @media (width >= 48rem) {
+      margin-top: calc(var(--spacing) * 8);
     }
   }
   .md\:mt-12 {
