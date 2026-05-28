@@ -57,12 +57,12 @@
       <div class="col-span-2 sm:col-span-1">
         <h5 class="text-brand-sky font-display text-[13px] uppercase tracking-[0.18em] font-medium m-0 mb-5">Industries</h5>
         <ul class="list-none p-0 m-0 grid grid-cols-2 sm:grid-cols-1 gap-3 text-cream/80 text-[15px]">
-          <li><a href="#" class="hover:text-cream transition-colors">Banking &amp; Finance</a></li>
-          <li><a href="#" class="hover:text-cream transition-colors">Health &amp; Pharma</a></li>
-          <li><a href="#" class="hover:text-cream transition-colors">E‑Commerce</a></li>
-          <li><a href="#" class="hover:text-cream transition-colors">Not‑For‑Profit</a></li>
-          <li><a href="#" class="hover:text-cream transition-colors">Hospitality</a></li>
-          <li><a href="#" class="hover:text-cream transition-colors">Government</a></li>
+          <li><a href="banking-finance.html" class="hover:text-cream transition-colors">Banking &amp; Finance</a></li>
+          <li><a href="health-pharma.html" class="hover:text-cream transition-colors">Health &amp; Pharma</a></li>
+          <li><a href="ecommerce.html" class="hover:text-cream transition-colors">E‑Commerce</a></li>
+          <li><a href="not-for-profit.html" class="hover:text-cream transition-colors">Not‑For‑Profit</a></li>
+          <li><a href="hospitality.html" class="hover:text-cream transition-colors">Hospitality</a></li>
+          <li><a href="government.html" class="hover:text-cream transition-colors">Government</a></li>
         </ul>
       </div>
     </div>

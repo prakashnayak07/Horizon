@@ -72,6 +72,7 @@ document.querySelector('header').innerHTML = `
               <svg class="w-3 h-3 transition-transform" data-mega-chev viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 5l4 4 4-4"/></svg>
             </button>
           </div>
+          <a href="industries.html" class="nav-link">Industries</a>
           <a href="network.html" class="nav-link">Network</a>
           <a href="sustainability.html" class="nav-link">Sustainability</a>
           <a href="contact.html" class="nav-link">Contact</a>
@@ -125,6 +126,7 @@ document.querySelector('header').innerHTML = `
         </div>
       </div>
 
+      <a href="industries.html" class="mobile-link">Industries</a>
       <a href="network.html" class="mobile-link">Network</a>
       <a href="sustainability.html" class="mobile-link">Sustainability</a>
       <a href="contact.html" class="mobile-link">Contact</a>
