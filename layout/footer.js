@@ -71,37 +71,30 @@
     <div class="flex items-center gap-5 py-6">
       <span class="flex-1 h-px bg-brand-sky/25"></span>
       <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-brand-sky text-[13px] font-display tracking-[0.06em]">
-        <a href="#" class="inline-flex items-center gap-1.5 hover:text-cream transition-colors">
+        <a href="https://www.facebook.com/Horizon-Print-Management-236461980230440/" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 hover:text-cream transition-colors">
           <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
             <path d="M13.5 21v-7.5h2.5l.4-3h-2.9V8.6c0-.9.3-1.5 1.6-1.5H16.5V4.4C16.2 4.4 15.2 4.3 14 4.3c-2.5 0-4.2 1.5-4.2 4.2v2H7.3v3h2.5V21h3.7z" />
           </svg>
           Facebook
         </a>
-        <a href="#" class="inline-flex items-center gap-1.5 hover:text-cream transition-colors">
+        <a href="https://x.com/HPMprint" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 hover:text-cream transition-colors">
           <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M22 5.8c-.7.3-1.5.6-2.4.7.9-.5 1.5-1.3 1.8-2.3-.8.5-1.7.8-2.6 1-.8-.8-1.9-1.3-3.2-1.3-2.4 0-4.3 1.9-4.3 4.3 0 .3 0 .7.1 1C7.7 9 4.7 7.4 2.7 4.9c-.4.6-.6 1.4-.6 2.2 0 1.5.8 2.8 1.9 3.6-.7 0-1.4-.2-2-.5v.1c0 2.1 1.5 3.8 3.4 4.2-.4.1-.7.1-1.1.1-.3 0-.5 0-.8-.1.5 1.7 2.1 2.9 4 3-1.5 1.1-3.3 1.8-5.3 1.8H1.5c1.9 1.2 4.1 1.9 6.5 1.9 7.8 0 12-6.4 12-12v-.5c.8-.6 1.5-1.3 2-2.2z" />
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
           </svg>
-          Twitter
+          X
         </a>
-        <a href="#" class="inline-flex items-center gap-1.5 hover:text-cream transition-colors">
+        <a href="https://plus.google.com/116699962449614893805" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 hover:text-cream transition-colors">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M8 11v2.4h4c-.2 1-1.2 3-4 3-2.4 0-4.4-2-4.4-4.4S5.6 7.6 8 7.6c1.4 0 2.3.6 2.8 1.1l1.9-1.8C11.5 5.8 9.9 5 8 5 4.1 5 1 8.1 1 12s3.1 7 7 7c4 0 6.7-2.8 6.7-6.8 0-.5 0-.8-.1-1.2zm15-1h-2V8h-2v2h-2v2h2v2h2v-2h2z"/>
+          </svg>
+          Google+
+        </a>
+        <a href="mailto:sales@horizonprintmanagement.com.au?subject=Website%20enquiry" class="inline-flex items-center gap-1.5 hover:text-cream transition-colors">
           <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
-            <rect x="3" y="3" width="18" height="18" rx="5" />
-            <circle cx="12" cy="12" r="4" />
-            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+            <rect x="3" y="5" width="18" height="14" rx="2"/>
+            <path d="M3 7l9 6 9-6"/>
           </svg>
-          Instagram
-        </a>
-        <a href="#" class="inline-flex items-center gap-1.5 hover:text-cream transition-colors">
-          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.22 8h4.56v14H.22V8zM8 8h4.37v1.9h.06c.61-1.15 2.1-2.36 4.32-2.36 4.62 0 5.47 3.04 5.47 7v9.46h-4.55v-8.39c0-2 0-4.57-2.78-4.57s-3.21 2.17-3.21 4.42V22H8V8z" />
-          </svg>
-          LinkedIn
-        </a>
-        <a href="#" class="inline-flex items-center gap-1.5 hover:text-cream transition-colors">
-          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M23.5 6.5a3 3 0 00-2.1-2.1C19.5 4 12 4 12 4s-7.5 0-9.4.4A3 3 0 00.5 6.5C.1 8.4.1 12 .1 12s0 3.6.4 5.5a3 3 0 002.1 2.1c1.9.4 9.4.4 9.4.4s7.5 0 9.4-.4a3 3 0 002.1-2.1c.4-1.9.4-5.5.4-5.5s0-3.6-.4-5.5zM9.75 15.5v-7l6.5 3.5-6.5 3.5z" />
-          </svg>
-          YouTube
+          Email
         </a>
       </div>
       <span class="flex-1 h-px bg-brand-sky/25"></span>
